@@ -1,19 +1,8 @@
-# DSD II Wortschatz Arena 5.0
+# DSD II Wortschatz Arena 5.1
 
-## Nutzung
-Öffnen Sie `index.html` im Browser.
+Öffnen Sie `index.html` lokal im Browser.
 
-## Struktur
-- `index.html`
-- `css/style.css`
-- `js/app.js`
-- `data/themes.js`
-
-## Enthaltene Phasen
-1. Zuordnen und Wort schreiben
-2. Wortfamilien
-3. Verben mit Präpositionen + Kasus
-4. Memory
-5. Wortkreuzrätsel
-6. Lückentext
-7. Meinung schreiben
+## Änderung 5.1
+- Lückentext funktioniert wieder.
+- Verben mit Präpositionen zeigen vor der Kontrolle nur eine spanische Hilfe.
+- Die deutsche Struktur + Präposition + Kasus erscheint erst nach dem Prüfen.
