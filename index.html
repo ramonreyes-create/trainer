@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DSD II Wortschatz Arena 5.1</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeutschQuest DSD II 6.3</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header><h1>DSD II Wortschatz Arena 5.1</h1><p>20 Themen · Wortschatz · Verben mit Präpositionen · Lückentext · Meinung</p></header>
-<div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
+<header class="hero">
+  <div class="heroInner">
+    <span class="badge light">Version 6.3</span>
+    <h1>DeutschQuest DSD II</h1>
+    <p>Interaktiver Wortschatztrainer für Schreibaufgabe, Erörterung und mündliche Kommunikation.</p>
+  </div>
+</header>
 <main>
-<section class="card"><span class="badge">Start</span><h2>Thema und Übungsform wählen</h2>
-<div class="controls"><div><label><strong>Thema</strong></label><select id="themeSelect"></select></div><div><label><strong>Übungsform</strong></label><select id="modeSelect">
-<option value="training">Phase 1–2: Zuordnen und Wort schreiben</option>
-<option value="families">Phase 3: Wortfamilien</option>
-<option value="prep">Phase 4: Verben mit Präpositionen</option>
-<option value="memory">Phase 5: Memory</option>
-<option value="crossword">Phase 6: Wortkreuzrätsel</option>
-<option value="exam">Phase 7: Lückentext</option>
-<option value="mini">Phase 8: Meinung schreiben</option>
-</select></div></div>
-<button class="primary" onclick="render()">Starten</button>
-<div class="modeCards">
-<div class="modeCard"><strong>Training</strong><span>Zuordnen, schreiben und Wortfamilien aufbauen.</span></div>
-<div class="modeCard"><strong>Grammatik</strong><span>Verben mit Präpositionen mit spanischer Hilfe.</span></div>
-<div class="modeCard"><strong>DSD-II-Transfer</strong><span>Lückentext und Meinung mit Behauptung, Begründung und Beispiel.</span></div>
-</div></section>
-<section id="content"></section>
+<section class="card introCard">
+  <span class="badge">Start</span>
+  <h2>Wähle den passenden Modus</h2>
+  <p>Die Schülerinnen arbeiten im Schüler-Modus. Der Lehrer-Modus dient nur zur Einrichtung und Kontrolle der Google-Sheets-Verbindung.</p>
+  <div class="navGrid">
+    <a class="navCard big" href="student.html"><strong>Schüler-Modus</strong><span>Übungen starten, Fortschritt sehen und Ergebnisse senden.</span></a>
+    <a class="navCard big" href="teacher.html"><strong>Lehrer-Modus</strong><span>Apps-Script-URL prüfen und Konfiguration vorbereiten.</span></a>
+  </div>
+</section>
+<section class="card">
+  <h2>Was ist enthalten?</h2>
+  <div class="featureGrid">
+    <div><strong>8 Phasen</strong><span>Zuordnen, Schreiben, Wortfamilien, Präpositionen, Memory, Kreuzrätsel, Lückentext, Meinung.</span></div>
+    <div><strong>DSD-II-Themen</strong><span>Arbeitswelt, Medienlandschaft, Jugend und weitere Themen aus der Datei <code>data/themes.js</code>.</span></div>
+    <div><strong>Google Sheets</strong><span>Ergebnisse können über Apps Script automatisch gespeichert werden.</span></div>
+  </div>
+</section>
 </main>
-<script src="data/themes.js"></script>
-<script src="js/app.js"></script>
 </body>
 </html>

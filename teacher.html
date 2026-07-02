@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeutschQuest DSD II 6.3 – Lehrer-Modus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>DeutschQuest DSD II 6.3</h1><p>Lehrer-Modus · GitHub-Pages-Setup</p></header>
+<main>
+<section class="card">
+  <span class="badge">Setup</span>
+  <h2>1. Google-Sheets-URL eintragen</h2>
+  <p>Trage hier die Web-App-URL ein, die mit <code>/exec</code> endet. Danach kannst du den fertigen Code in <code>js/config.js</code> kopieren.</p>
+  <label><strong>Web-App-URL</strong></label>
+  <input id="sheetUrl" placeholder="https://script.google.com/macros/s/DEINE_URL/exec">
+  <div class="controls">
+    <div><label><strong>Schul-/Projektname</strong></label><input id="schoolName" placeholder="DeutschQuest DSD II"></div>
+    <div><label><strong>Kurse</strong></label><input id="courses" placeholder="DSD II, III Medio, IV Medio"></div>
+  </div>
+  <button class="primary" onclick="buildConfig()">Config-Code erstellen</button>
+  <button class="secondary" onclick="testConnection()">Verbindung testen</button>
+  <button class="hint" onclick="copyConfig()">Code kopieren</button>
+  <p id="status" class="small"></p>
+</section>
+<section class="card">
+  <h2>2. Diesen Code in <code>js/config.js</code> einfügen</h2>
+  <textarea id="configCode" readonly></textarea>
+  <p class="small">Wichtig: Speichern im Lehrer-Modus ändert GitHub nicht automatisch. Für GitHub Pages muss die Datei <code>js/config.js</code> wirklich geändert und hochgeladen werden.</p>
+</section>
+<section class="card">
+  <h2>3. Das kommt auf GitHub</h2>
+  <p>Lade den gesamten Inhalt dieser carpeta hoch, nicht den äußeren ZIP-Ordner.</p>
+  <ul>
+    <li><code>index.html</code></li><li><code>student.html</code></li><li><code>teacher.html</code></li>
+    <li><code>css/</code></li><li><code>js/</code></li><li><code>data/</code></li><li><code>google/</code></li>
+  </ul>
+</section>
+</main>
+<script src="js/config.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>

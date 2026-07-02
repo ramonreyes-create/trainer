@@ -1,0 +1,43 @@
+DEUTSCHQUEST DSD II 6.3 – LISTO PARA GITHUB PAGES
+
+QUÉ SUBIR A GITHUB
+------------------
+Sube TODO EL CONTENIDO de esta carpeta, no la carpeta comprimida:
+
+index.html
+student.html
+teacher.html
+css/
+js/
+data/
+google/
+README.md
+CONFIGURAR_ANTES_DE_SUBIR.txt
+
+PASO ÚNICO ANTES DE SUBIR
+-------------------------
+Debes pegar la URL de Google Apps Script en:
+
+js/config.js
+
+Busca esta línea:
+
+sheetUrl: "",
+
+y reemplázala por:
+
+sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
+
+IMPORTANTE
+----------
+- No pegues el script en teacher.html.
+- No pegues el script en student.html.
+- El script .gs va en Google Apps Script.
+- La URL /exec va en js/config.js.
+- teacher.html te ayuda a probar y generar el código, pero NO modifica GitHub automáticamente.
+
+USO
+---
+- Alumnas: student.html
+- Profesor/configuración: teacher.html
+- Entrada general: index.html

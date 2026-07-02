@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><h1>DeutschQuest DSD II 6.3</h1><p>Schüler-Modus · Wortschatz, Erörterung und Training</p></header>
+<div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
+<main>
+<section class="card">
+<span class="badge">Start</span><h2>Daten eingeben</h2>
+<div class="controls">
+<div><label><strong>Name</strong></label><input id="studentName" placeholder="Name"></div>
+<div><label><strong>Kurs</strong></label><select id="studentCourse"></select></div>
+</div>
+<div class="controls">
+<div><label><strong>Thema</strong></label><select id="themeSelect"></select></div>
+<div><label><strong>Übungsform</strong></label><select id="modeSelect">
+<option value="training">Phase 1–2: Zuordnen und Wort schreiben</option>
+<option value="families">Phase 3: Wortfamilien</option>
+<option value="prep">Phase 4: Verben mit Präpositionen</option>
+<option value="memory">Phase 5: Memory</option>
+<option value="crossword">Phase 6: Wortkreuzrätsel</option>
+<option value="exam">Phase 7: Lückentext</option>
+<option value="mini">Phase 8: Meinung schreiben</option>
+</select></div>
+</div>
+<button class="primary" onclick="saveStudent();render()">Starten</button>
+<button class="hint" onclick="sendCurrentResults()">Aktuelle Phase senden</button>
+<p id="saveStatus" class="small">Noch nicht gesendet.</p>
+</section>
+<section id="content"></section>
+</main>
+<script src="data/themes.js"></script>
+<script src="js/config.js"></script>
+<script src="js/student.js"></script>
+</body>
+</html>
