@@ -1,1 +1,43 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DeutschQuest 7.0 – Schülerin</title><link rel="stylesheet" href="css/style.css"></head><body><div class="app"><div class="topbar"><div><div class="brand">DeutschQuest 7.0</div><div class="muted">Thema wählen · 8 Wortschatz-Aktivitäten · komplette Abgabe</div></div><div class="row"><a class="btn" href="index.html">Start</a><a class="btn" href="teacher.html">Lehrer</a></div></div><div class="layout"><aside class="panel sidebar"><h2>Profil</h2><div class="field"><label>Name der Schülerin</label><input id="studentName" placeholder="z. B. Emilia González"></div><div class="field"><label>Kurs / Gruppe frei schreiben</label><input id="courseName" placeholder="z. B. 8A, DSD II, Rodrigo, Intensiv B1"></div><button class="primary" id="saveProfileBtn">Profil speichern</button><button id="resetBtn">Neue Sitzung</button><hr><h3>Auswahl</h3><p id="sideTopic" class="muted">Noch kein Thema gewählt.</p><p id="sideActivity" class="muted">Noch keine Aktivität gewählt.</p><hr><h3>Fortschritt</h3><div class="progress"><span id="progressBar"></span></div><p id="progressText" class="muted">0/8 Aktivitäten gespeichert.</p><div class="resultbox warning"><b>Wichtig:</b><br>Die Schülerin kann die 8 Aktivitäten frei wählen. Am Ende wird das vollständige Protokoll gesendet.</div></aside><main class="panel"><section id="topicScreen"><span class="pill">Schritt 1</span><h1>Wähle ein Thema.</h1><p class="muted">Danach erscheinen 8 Übungen zu genau diesem Wortschatz.</p><div id="topicGrid" class="cards"></div></section><section id="menuScreen" class="hidden"><div class="row" style="justify-content:space-between"><div><span id="topicLevel" class="pill"></span><h1 id="topicTitle"></h1><p id="topicSub" class="muted"></p></div><div class="muted" id="timer">00:00</div></div><h2>Wähle eine der 8 Aktivitäten</h2><div id="activityMenu" class="cards"></div><div class="row"><button id="changeTopicBtn">Anderes Thema</button><button class="primary" id="finishBtn">Komplette Abgabe senden</button></div><div id="status"></div></section><section id="workScreen" class="hidden"><div class="row" style="justify-content:space-between"><button id="backMenuBtn">← Aktivitäten</button><div class="muted" id="timer2">00:00</div></div><div id="activityBox"></div><div class="row"><button class="primary" id="checkBtn">Prüfen / Speichern</button><button id="againBtn">Noch einmal</button><button id="backMenuBtn2">Zurück zur Auswahl</button></div><div id="workStatus"></div></section><section id="done" class="hidden"><span class="pill">Gesendet</span><h1>Gut gemacht!</h1><p id="doneText"></p><div class="resultbox"><b>Gesendet wurden:</b><br>Name, offener Kurs, Thema, Zeit, Punkte und alle Antworten aus den 8 Aktivitäten.</div></section></main></div></div><script src="js/config.js"></script><script src="data/lessons.js"></script><script src="js/student.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II 7.0 – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><h1>DeutschQuest DSD II 7.0</h1><p>Schüler-Modus · DSD-II-Wortschatz · 8 Übungen pro Thema</p></header>
+<div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
+<main>
+<section class="card">
+<span class="badge">Start</span><h2>Daten eingeben</h2>
+<div class="controls">
+<div><label><strong>Name</strong></label><input id="studentName" placeholder="Name"></div>
+<div><label><strong>Kurs</strong></label><input id="studentCourse" placeholder="z. B. DSD II, III Medio, Rodrigo Particular"></div>
+</div>
+<div class="controls">
+<div><label><strong>Thema</strong></label><select id="themeSelect"></select></div>
+<div><label><strong>Übungsform</strong></label><select id="modeSelect">
+<option value="match">1. Zuordnen</option>
+<option value="write">2. Wort schreiben</option>
+<option value="families">3. Wortfamilien</option>
+<option value="prep">4. Verben mit Präpositionen</option>
+<option value="memory">5. Memory</option>
+<option value="crossword">6. Wortkreuzrätsel</option>
+<option value="exam">7. Lückentext</option>
+<option value="mini">8. Meinung schreiben</option>
+</select></div>
+</div>
+<button class="primary" onclick="saveStudent();render()">Übung starten</button>
+<button class="hint" onclick="sendCompleteResults()">Kompletten Bericht senden</button>
+<p id="saveStatus" class="small">Noch nicht gesendet.</p>
+<p class="small">Version 7.0 speichert alle geprüften Antworten lokal im Sitzungsbericht. Am Ende wird der komplette Bericht gesendet.</p>
+</section>
+<section id="content"></section>
+<section class="card">
+  <span class="badge">Sitzungsbericht</span>
+  <h2>Was wird gesendet?</h2>
+  <div id="reportPreview" class="small">Noch keine Aktivität registriert.</div>
+</section>
+</main>
+<script src="data/themes.js"></script>
+<script src="js/config.js"></script>
+<script src="js/student.js"></script>
+</body>
+</html>

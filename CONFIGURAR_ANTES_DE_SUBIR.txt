@@ -1,43 +1,19 @@
-DEUTSCHQUEST DSD II 6.3 – LISTO PARA GITHUB PAGES
+DeutschQuest DSD II 7.0
 
-QUÉ SUBIR A GITHUB
-------------------
-Sube TODO EL CONTENIDO de esta carpeta, no la carpeta comprimida:
+ANTES DE SUBIR A GITHUB:
 
-index.html
-student.html
-teacher.html
-css/
-js/
-data/
-google/
-README.md
-CONFIGURAR_ANTES_DE_SUBIR.txt
+1. Abre google/google_apps_script.gs.
+2. Copia ese código en Google Apps Script.
+3. Publica el Apps Script como Web-App.
+4. Copia la URL que termina en /exec.
+5. Abre js/config.js.
+6. Pega la URL en sheetUrl.
+7. Sube TODA esta carpeta a GitHub Pages.
 
-PASO ÚNICO ANTES DE SUBIR
--------------------------
-Debes pegar la URL de Google Apps Script en:
-
-js/config.js
-
-Busca esta línea:
-
-sheetUrl: "",
-
-y reemplázala por:
-
-sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
-
-IMPORTANTE
-----------
-- No pegues el script en teacher.html.
-- No pegues el script en student.html.
-- El script .gs va en Google Apps Script.
-- La URL /exec va en js/config.js.
-- teacher.html te ayuda a probar y generar el código, pero NO modifica GitHub automáticamente.
-
-USO
----
-- Alumnas: student.html
-- Profesor/configuración: teacher.html
-- Entrada general: index.html
+NOVEDADES 7.0:
+- Basada en la versión 6.3.
+- Vocabulario DSD II conservado desde data/themes.js.
+- Curso abierto para escribir libremente.
+- 8 actividades por tema.
+- Envío completo del historial.
+- Google Sheets con hojas Resumen y Detalle.
