@@ -1,49 +1,31 @@
-# DeutschQuest DSD II 6.3 – GitHub Ready
+# DeutschQuest 7.0 Funcional
 
-Esta versión está preparada para GitHub Pages y mejora la versión 6.2.
+Versión funcional para GitHub Pages.
 
-## Archivos que debes subir a GitHub
+## Archivos principales
+- `index.html` – portada
+- `student.html` – modo alumna
+- `teacher.html` – modo profesor
+- `js/config.js` – aquí se pega la URL de Google Apps Script
+- `apps-script/Code.gs` – código para Google Sheets
 
-Sube el contenido completo de esta carpeta:
+## Qué mejora la versión 7.0
+- Campo Curso abierto: la alumna escribe lo que quiera.
+- Registro completo de respuestas, no solo la última actividad.
+- Historial con hora, actividad, pregunta, respuesta, solución, correcto/incorrecto, intentos y tiempo.
+- Guardado local automático en el navegador.
+- Envío final completo a Google Sheets.
+- Autosend opcional después de cada actividad.
+- Panel docente más claro con filtros por curso, alumna y unidad.
 
-- `index.html`
-- `student.html`
-- `teacher.html`
-- `css/`
-- `js/`
-- `data/`
-- `google/`
-- `README.md`
-- `CONFIGURAR_ANTES_DE_SUBIR.txt`
+## Configuración Google Sheets
+1. Crear una Google Sheet nueva.
+2. Ir a Extensiones → Apps Script.
+3. Pegar el contenido de `apps-script/Code.gs`.
+4. Implementar como Web App.
+5. Acceso: Cualquiera.
+6. Copiar la URL de la Web App.
+7. Pegarla en `js/config.js` en `WEBAPP_URL`.
 
-No subas solo el archivo ZIP. Deben quedar los archivos visibles en la raíz del repositorio.
-
-## Configuración de Google Sheets
-
-1. Crea un Google Sheet.
-2. Abre Extensiones → Apps Script.
-3. Pega el código de `google/google_apps_script.gs`.
-4. Publica como Web-App.
-5. Copia la URL que termina en `/exec`.
-6. Abre `js/config.js`.
-7. Pega la URL en `sheetUrl`.
-
-Ejemplo:
-
-```js
-sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
-```
-
-## Uso
-
-- Las alumnas entran en `student.html`.
-- El profesor usa `teacher.html` solo para preparar y comprobar la configuración.
-- `index.html` es la portada general.
-
-## Novedades 6.3
-
-- Portada más clara.
-- Lehrer-Modus más ordenado.
-- Generador de `config.js`.
-- Advertencia clara de que el Lehrer-Modus no modifica GitHub automáticamente.
-- Versión coherente 6.3 en HTML y JS.
+## Subir a GitHub
+Sube la carpeta completa al repositorio. No subas solo los HTML, porque necesitan las carpetas `css`, `js`, `data` y `apps-script`.

@@ -1,59 +1,10 @@
-function initialConfig(){
-  const c = window.DQ_CONFIG || {};
-  document.getElementById("sheetUrl").value = c.sheetUrl || "";
-  document.getElementById("schoolName").value = c.schoolName || "DeutschQuest DSD II";
-  document.getElementById("courses").value = (c.courses || ["DSD II", "III Medio", "IV Medio"]).join(", ");
-  buildConfig(false);
-}
-function readForm(){
-  return {
-    appVersion: "6.3",
-    schoolName: document.getElementById("schoolName").value.trim() || "DeutschQuest DSD II",
-    sheetUrl: document.getElementById("sheetUrl").value.trim(),
-    courses: document.getElementById("courses").value.split(",").map(x=>x.trim()).filter(Boolean),
-    passPercent: 80
-  };
-}
-function buildConfig(showStatus=true){
-  const c = readForm();
-  const code = `// DeutschQuest DSD II 6.3 – GitHub Ready
-window.DQ_CONFIG = ${JSON.stringify(c,null,2)};
-`;
-  document.getElementById("configCode").value = code;
-  if(showStatus){
-    const st=document.getElementById("status");
-    st.textContent="Config-Code erstellt. Kopiere ihn jetzt in js/config.js.";
-    st.className="small saveOk";
-  }
-}
-async function copyConfig(){
-  buildConfig(false);
-  try{
-    await navigator.clipboard.writeText(document.getElementById("configCode").value);
-    const st=document.getElementById("status");
-    st.textContent="Config-Code kopiert.";
-    st.className="small saveOk";
-  }catch(e){
-    const st=document.getElementById("status");
-    st.textContent="Kopieren nicht möglich. Bitte manuell markieren und kopieren.";
-    st.className="small saveBad";
-  }
-}
-async function testConnection(){
-  const c=readForm();
-  const st=document.getElementById("status");
-  if(!c.sheetUrl){st.textContent="Bitte zuerst die Web-App-URL eintragen.";st.className="small saveBad";return;}
-  if(!c.sheetUrl.includes("script.google.com") || !c.sheetUrl.endsWith("/exec")){
-    st.textContent="Die URL sieht nicht korrekt aus. Sie sollte von script.google.com kommen und mit /exec enden.";
-    st.className="small saveBad";return;
-  }
-  try{
-    await fetch(c.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({timestamp:new Date().toISOString(),name:"TEST",course:"TEST",theme:"TEST",mode:"Verbindungstest 6.3",correct:1,total:1,percent:100,timeSeconds:0,errors:"",userAgent:navigator.userAgent})});
-    st.textContent="Test gesendet. Prüfe im Google Sheet, ob eine TEST-Zeile angekommen ist.";
-    st.className="small saveOk";
-  }catch(e){
-    st.textContent="Test fehlgeschlagen. Prüfe Veröffentlichung des Apps Scripts.";
-    st.className="small saveBad";
-  }
-}
-initialConfig();
+const $=id=>document.getElementById(id);let submissions=[],filtered=[];function fmt(sec){sec=Number(sec||0);return String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')}function pct(s){return s.totalCorrectable?Math.round(s.score/s.totalCorrectable*100):0}
+function normalizeSubmission(x){if(x.payload) x=typeof x.payload==='string'?JSON.parse(x.payload):x.payload;if(x.DetailsJSON) x=JSON.parse(x.DetailsJSON);return x}
+async function loadRemote(){const url=window.DQ_CONFIG?.WEBAPP_URL||'';if(!url){alert('Falta pegar la URL en js/config.js');return}try{const r=await fetch(url);const data=await r.json();submissions=(data.rows||data||[]).map(normalizeSubmission).filter(Boolean);apply()}catch(e){alert('No se pudo cargar desde Google Sheets. Revisa la URL o pega JSON manualmente.')}}
+function loadLocal(){const raw=localStorage.getItem('dq7_last_submission')||localStorage.getItem('dq7_last_payload');if(!raw){alert('No hay entrega local en este navegador.');return}submissions=[JSON.parse(raw)];apply()}
+function importJson(){try{const val=$('jsonImport').value.trim();const parsed=JSON.parse(val);submissions=(Array.isArray(parsed)?parsed:[parsed]).map(normalizeSubmission);apply()}catch(e){alert('JSON no válido.')}}
+function apply(){const fc=$('filterCourse').value.toLowerCase(),fn=$('filterName').value.toLowerCase(),fl=$('filterLesson').value.toLowerCase();filtered=submissions.filter(s=>(!fc||(s.courseName||'').toLowerCase().includes(fc))&&(!fn||(s.studentName||'').toLowerCase().includes(fn))&&(!fl||(s.lessonTitle||'').toLowerCase().includes(fl)));render()}
+function render(){let acts=0,time=0,avg=0;filtered.forEach(s=>{acts+=(s.activities||[]).length;time+=Number(s.totalSeconds||0);avg+=pct(s)});$('sCount').textContent=filtered.length;$('sAct').textContent=acts;$('sAvg').textContent=filtered.length?Math.round(avg/filtered.length)+'%':'0%';$('sTime').textContent=filtered.length?fmt(Math.round(time/filtered.length)):'0:00';$('overview').innerHTML=filtered.map((s,i)=>`<tr><td>${(s.finishedAt||s.startedAt||'').slice(0,19).replace('T',' ')}</td><td><b>${s.studentName||''}</b></td><td>${s.courseName||''}</td><td>${s.lessonTitle||''}</td><td>${s.score||0}/${s.totalCorrectable||0} · ${pct(s)}%</td><td>${fmt(s.totalSeconds)}</td><td><button onclick="detail(${i})">Ansehen</button></td></tr>`).join('')||'<tr><td colspan="7" class="muted">Keine Daten.</td></tr>'}
+function detail(i){const s=filtered[i];let html=`<div class="resultbox"><b>${s.studentName}</b> · ${s.courseName} · ${s.lessonTitle}<br>Gesamt: ${s.score||0}/${s.totalCorrectable||0} · ${pct(s)}% · ${fmt(s.totalSeconds)}</div>`;(s.activities||[]).forEach(a=>{html+=`<h3>${a.activityIndex}. ${a.activityTitle}</h3><p class="muted">Zeit: ${fmt(a.seconds)} · Typ: ${a.type}</p>`;if(a.freeText){html+=`<div class="q"><b>Freier Text</b><p>${escapeHtml(a.freeText).replace(/\n/g,'<br>')}</p></div>`}html+=`<div class="tablewrap"><table class="table"><thead><tr><th>Frage</th><th>Antwort</th><th>Lösung</th><th>Status</th></tr></thead><tbody>${(a.items||[]).map(it=>`<tr><td>${escapeHtml(it.question)}</td><td>${escapeHtml(it.response||'')}</td><td>${escapeHtml(it.answer||'')}</td><td>${it.correct===null?'frei':it.correct?'<span class="ok">richtig</span>':'<span class="bad">falsch</span>'}</td></tr>`).join('')}</tbody></table></div>`});$('details').innerHTML=html}
+function escapeHtml(s){return String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;')}
+$('loadBtn').onclick=loadRemote;$('loadLocal').onclick=loadLocal;$('importBtn').onclick=importJson;$('applyFilter').onclick=apply;render();
