@@ -6,7 +6,7 @@ function doPost(e) {
 
   if (sheet.getLastRow() === 0) {
     sheet.appendRow([
-      'Timestamp', 'Kind', 'Version', 'Name', 'Kurs', 'Level', 'Lektion',
+      'Timestamp', 'Kind', 'Version', 'Name', 'Kurs', 'Level', 'Thema',
       'StartedAt', 'FinishedAt', 'TotalSeconds', 'Score', 'TotalCorrectable',
       'Percent', 'ActivitiesCount', 'DetailsJSON'
     ]);
@@ -15,7 +15,7 @@ function doPost(e) {
   const percent = data.totalCorrectable ? Math.round((data.score / data.totalCorrectable) * 100) : 0;
   sheet.appendRow([
     new Date(), data.kind || 'final', data.version || '7.0', data.studentName || '',
-    data.courseName || '', data.level || '', data.lessonTitle || '', data.startedAt || '',
+    data.courseName || '', data.level || '', data.topicTitle || data.lessonTitle || '', data.startedAt || '',
     data.finishedAt || '', data.totalSeconds || 0, data.score || 0, data.totalCorrectable || 0,
     percent, (data.activities || []).length, JSON.stringify(data)
   ]);

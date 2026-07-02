@@ -1,31 +1,17 @@
-INSTRUCCIONES RÁPIDAS – DeutschQuest 7.0
+DeutschQuest 7.0 corregido
 
-QUÉ SUBIR A GITHUB:
-Sube toda la carpeta DeutschQuest_7_0_Funcional completa.
-No subas solo index.html.
+1. Subir toda la carpeta a GitHub Pages.
+2. Abrir index.html.
+3. La alumna entra a Schülermodus.
+4. Escribe nombre y curso libre.
+5. Elige un tema.
+6. Elige una de las 8 actividades de vocabulario.
+7. Puede trabajar en cualquier orden.
+8. Al terminar, presiona: Komplette Abgabe senden.
 
-CARPETAS NECESARIAS:
-css
-js
-data
-apps-script
-docs
-
-CONFIGURACIÓN GOOGLE SHEETS:
-1. Crea una hoja nueva.
-2. Extensiones > Apps Script.
-3. Copia el archivo apps-script/Code.gs.
-4. Implementar > Nueva implementación > Web app.
-5. Ejecutar como: tú.
-6. Acceso: cualquiera.
-7. Copia la URL.
-8. Pégala en js/config.js.
-
-CURSO ABIERTO:
-La alumna puede escribir cualquier curso o grupo.
-Ejemplos: 7A, 8B, DSD II, Rodrigo, Intensivo B1.
-
-ENVÍO:
-Por defecto se envía todo al final.
-Si quieres respaldo después de cada actividad, cambia en js/config.js:
-SEND_MODE: "checkpoint"
+Google Sheets:
+- Crear Google Sheet.
+- Apps Script.
+- Copiar apps-script/Code.gs.
+- Implementar como Web App.
+- Copiar la URL en js/config.js.

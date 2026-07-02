@@ -1,31 +1,68 @@
-# DeutschQuest 7.0 Funcional
+# DeutschQuest 7.0 – Themen + 8 Aktivitäten
 
-Versión funcional para GitHub Pages.
+Versión corregida funcional.
 
-## Archivos principales
-- `index.html` – portada
-- `student.html` – modo alumna
-- `teacher.html` – modo profesor
-- `js/config.js` – aquí se pega la URL de Google Apps Script
-- `apps-script/Code.gs` – código para Google Sheets
+## Flujo de la alumna
 
-## Qué mejora la versión 7.0
-- Campo Curso abierto: la alumna escribe lo que quiera.
-- Registro completo de respuestas, no solo la última actividad.
-- Historial con hora, actividad, pregunta, respuesta, solución, correcto/incorrecto, intentos y tiempo.
-- Guardado local automático en el navegador.
-- Envío final completo a Google Sheets.
-- Autosend opcional después de cada actividad.
-- Panel docente más claro con filtros por curso, alumna y unidad.
+1. Escribe su nombre.
+2. Escribe libremente el curso o grupo.
+3. Elige un tema de vocabulario.
+4. Elige libremente una de las 8 actividades:
+   1. Flashcards
+   2. Multiple Choice Deutsch → Spanisch
+   3. Multiple Choice Spanisch → Deutsch
+   4. Schreiben Deutsch
+   5. Übersetzen ins Spanische
+   6. Zuordnen
+   7. Lückensätze
+   8. Freier Text
+5. Puede hacer las actividades en cualquier orden.
+6. Al final se envía la entrega completa.
 
-## Configuración Google Sheets
-1. Crear una Google Sheet nueva.
-2. Ir a Extensiones → Apps Script.
-3. Pegar el contenido de `apps-script/Code.gs`.
-4. Implementar como Web App.
-5. Acceso: Cualquiera.
-6. Copiar la URL de la Web App.
-7. Pegarla en `js/config.js` en `WEBAPP_URL`.
+## Registro
 
-## Subir a GitHub
-Sube la carpeta completa al repositorio. No subas solo los HTML, porque necesitan las carpetas `css`, `js`, `data` y `apps-script`.
+La entrega guarda:
+
+- nombre
+- curso abierto
+- tema elegido
+- tiempo total
+- puntaje
+- actividades realizadas
+- respuestas de cada ítem
+- texto libre completo
+
+## Google Sheets
+
+Pega la URL de tu Web App en:
+
+`js/config.js`
+
+```js
+WEBAPP_URL: "https://script.google.com/macros/s/XXXXX/exec"
+```
+
+Modo recomendado:
+
+```js
+SEND_MODE: "final"
+```
+
+Modo con respaldo después de cada actividad:
+
+```js
+SEND_MODE: "checkpoint"
+```
+
+## Archivos para subir a GitHub
+
+Sube todo el contenido de esta carpeta:
+
+- index.html
+- student.html
+- teacher.html
+- css/
+- js/
+- data/
+- apps-script/
+- docs/
