@@ -12,7 +12,7 @@
 window.DQ_CONFIG = {
   appVersion: "8.6-final-functional",
   schoolName: "DeutschQuest DSD II",
-  sheetUrl: "", // Ejemplo: "https://script.google.com/macros/s/XXXXXXXX/exec"
+  sheetUrl: "https://script.google.com/macros/s/AKfycbyArRpps7wDio-HjWJP5w7QAd5vNHk6NSddLCsOSVFqVkKZsusdYyFrGWEkvpSh-YLbYQ/exec", // Ejemplo: "https://script.google.com/macros/s/XXXXXXXX/exec"
   courses: ["DSD II", "III Medio", "IV Medio"],
   passPercent: 80
 };
