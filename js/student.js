@@ -42,7 +42,7 @@ function collectOpenText(){
 function collectFullProtocol(){
   const score=getCurrentScore();
   return {
-    appVersion:(effectiveConfig().appVersion||"8.2"),
+    appVersion:(effectiveConfig().appVersion||"8.3"),
     timestamp:dqNow(),
     name:getSettings().name,
     course:getSettings().course,
@@ -114,18 +114,24 @@ async function sendCurrentResults(){
   saveStudent();
   const s=getSettings();
   const status=document.getElementById("saveStatus");
+  const btn=document.getElementById("sendProtocolBtn");
   if(!s.name || !s.course){status.textContent="Bitte Name und Kurs eingeben.";status.className="small saveBad";return;}
   if(!s.sheetUrl){status.textContent="Google-Sheets-URL fehlt. Der Lehrer muss die URL in js/config.js eintragen.";status.className="small saveBad";return;}
   const score=getCurrentScore();
   logEvent("send_protocol",{score:score});
   const payload=collectFullProtocol();
+  status.textContent="Wird gesendet …";
+  status.className="small sendBusy";
+  if(btn){btn.disabled=true;btn.textContent="Wird gesendet …";}
   try{
     await fetch(s.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
-    status.textContent="Gesamtes Protokoll wurde gesendet.";
+    status.textContent="Gesendet.";
     status.className="small saveOk";
+    if(btn){btn.textContent="Gesendet";}
   }catch(e){
     status.textContent="Senden fehlgeschlagen.";
     status.className="small saveBad";
+    if(btn){btn.disabled=false;btn.textContent="Gesamtes Protokoll senden";}
   }
 }
 

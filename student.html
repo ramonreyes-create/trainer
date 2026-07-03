@@ -2,7 +2,7 @@
 <html lang="de">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
 <body>
-<header><h1>DeutschQuest DSD II 8.2</h1><p>Schüler-Modus · Wortschatz, Erörterung und Training</p></header>
+<header><h1>DeutschQuest DSD II 8.3</h1><p>Schüler-Modus · Wortschatz, Erörterung und Training</p></header>
 <div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
 <main>
 <section class="card">
@@ -24,8 +24,8 @@
 </select></div>
 </div>
 <button class="primary" onclick="saveStudent();render()">Starten</button>
-<button class="hint" onclick="sendCurrentResults()">Gesamtes Protokoll senden</button>
-<p id="saveStatus" class="small">Noch nicht gesendet.</p>
+<button id="sendProtocolBtn" class="hint" onclick="sendCurrentResults()">Gesamtes Protokoll senden</button>
+<p id="saveStatus" class="small" aria-live="polite">Bereit zum Senden.</p>
 </section>
 <section id="content"></section>
 </main>

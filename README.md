@@ -49,5 +49,12 @@ sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
 - Versión coherente 6.3 en HTML y JS.
 
 
-## Version 8.2 Original + Registro Total
+## Version 8.3 Original + Registro Total
 Esta versión conserva el diseño y la estructura funcional de la 6.3. La única mejora central es el registro completo de la sesión: temas, cambios de actividad, respuestas, intentos, puntajes, tiempos, cambios de pestaña y salida/entrada de pantalla completa.
+
+
+## Änderung 8.3
+
+- Das Aktivitätsprotokoll wird im Schüler-Modus nicht sichtbar angezeigt.
+- Das vollständige Protokoll wird weiterhin intern gesammelt und an Google Sheets gesendet.
+- Beim Senden erscheint für die Schülerin nur der Status „Wird gesendet …“ und danach „Gesendet“.
