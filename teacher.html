@@ -1,10 +1,45 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DeutschQuest 7.0 – Lehrer</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
-<body><header><a class="btn" href="index.html">← Zurück</a><h1>Lehrer-Dashboard</h1><p>Tracking, Google Sheets und lokale Kontrolle</p></header><main>
-<section class="card"><h2>1. Google Sheets aktivieren</h2><p>Kopiere den Inhalt von <code>apps_script/Code.gs</code> in Google Apps Script. Danach die Web-App als <b>Jeder</b> veröffentlichen und die URL <code>/exec</code> in <code>js/config.js</code> eintragen.</p><p>Dann setze:</p><pre><code>DEMO_MODE: false</code></pre></section>
-<section class="card"><h2>2. Was wird registriert?</h2><ul><li>Profil der Schülerin</li><li>Startseite, Thema, Aktivität</li><li>Jede Antwort: richtig/falsch, Wort, Antwort, Lösung</li><li>Offene Sätze und DSD-II-Texte</li><li>Zeit, Prozent, Dauer</li><li>Tab-Wechsel, Schließen/Neuladen der Seite</li></ul></section>
-<section class="card"><h2>Lokale Warteschlange</h2><p class="muted">Falls das Internet kurz ausfällt, werden Events lokal gesammelt und später erneut gesendet.</p><button onclick="render()">Aktualisieren</button><button onclick="DQTracker.flush().then(render)">Jetzt senden</button><button onclick="localStorage.removeItem('dq7_event_queue');render()">Lokale Queue löschen</button><div id="out"></div></section>
-</main><script src="js/config.js"></script><script src="js/tracking.js"></script><script>
-function render(){let q=[];try{q=JSON.parse(localStorage.getItem("dq7_event_queue")||"[]")}catch(e){};out.innerHTML="<p><b>"+q.length+"</b> lokale Events.</p><table><tr><th>Zeit</th><th>Typ</th><th>Name</th><th>Thema</th><th>Aktivität</th></tr>"+q.slice(-50).reverse().map(e=>`<tr><td>${e.created_at||""}</td><td>${e.type||""}</td><td>${e.student_name||""}</td><td>${e.topic_title||""}</td><td>${e.activity_id||""}</td></tr>`).join("")+"</table>";}
-DQTracker.track("teacher_open"); render();
-</script></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeutschQuest DSD II 8.1 – Lehrer-Modus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero"><div class="heroInner"><span class="badge light">Version 8.1 · Lehrer-Modus</span><h1>DeutschQuest DSD II</h1><p>Setup für Google Sheets und GitHub Pages.</p></div></header>
+<main>
+<section class="card">
+  <span class="badge">Setup</span>
+  <h2>1. Google-Sheets-URL eintragen</h2>
+  <p class="versionNote">Diese Version behält den Wortschatz der 6.3 und verbessert die Darstellung für Schülerinnen.</p>
+  <p>Trage hier die Web-App-URL ein, die mit <code>/exec</code> endet. Danach kannst du den fertigen Code in <code>js/config.js</code> kopieren.</p>
+  <label><strong>Web-App-URL</strong></label>
+  <input id="sheetUrl" placeholder="https://script.google.com/macros/s/DEINE_URL/exec">
+  <div class="controls">
+    <div><label><strong>Schul-/Projektname</strong></label><input id="schoolName" placeholder="DeutschQuest DSD II"></div>
+    <div><label><strong>Kurse</strong></label><input id="courses" placeholder="DSD II, III Medio, IV Medio"></div>
+  </div>
+  <button class="primary" onclick="buildConfig()">Config-Code erstellen</button>
+  <button class="secondary" onclick="testConnection()">Verbindung testen</button>
+  <button class="hint" onclick="copyConfig()">Code kopieren</button>
+  <p id="status" class="small"></p>
+</section>
+<section class="card">
+  <h2>2. Diesen Code in <code>js/config.js</code> einfügen</h2>
+  <textarea id="configCode" readonly></textarea>
+  <p class="small">Wichtig: Speichern im Lehrer-Modus ändert GitHub nicht automatisch. Für GitHub Pages muss die Datei <code>js/config.js</code> wirklich geändert und hochgeladen werden.</p>
+</section>
+<section class="card">
+  <h2>3. Das kommt auf GitHub</h2>
+  <p>Lade den gesamten Inhalt dieser carpeta hoch, nicht den äußeren ZIP-Ordner.</p>
+  <ul>
+    <li><code>index.html</code></li><li><code>student.html</code></li><li><code>teacher.html</code></li>
+    <li><code>css/</code></li><li><code>js/</code></li><li><code>data/</code></li><li><code>google/</code></li>
+  </ul>
+</section>
+</main>
+<script src="js/config.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>

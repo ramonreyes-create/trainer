@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II 7.0 – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II 8.1 – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
 <body>
-<header><h1>DeutschQuest DSD II 7.0</h1><p>Schüler-Modus · DSD-II-Wortschatz · 8 Übungen pro Thema</p></header>
+<header class="hero"><div class="heroInner"><span class="badge light">Version 8.1 · Schüler-Modus</span><h1>DeutschQuest DSD II</h1><p>Wortschatztraining für DSD II: Themen wählen, üben, Punkte sammeln und Ergebnisse senden.</p></div></header>
 <div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
 <main>
 <section class="card">
-<span class="badge">Start</span><h2>Daten eingeben</h2>
+<span class="badge">Start</span><h2>Bereit für dein Training?</h2><p class="small">Wähle dein Thema und eine Übungsform. Der Wortschatz stammt vollständig aus der Version 6.3. Diese Version speichert den kompletten Lernweg.</p>
 <div class="controls">
 <div><label><strong>Name</strong></label><input id="studentName" placeholder="Name"></div>
-<div><label><strong>Kurs</strong></label><input id="studentCourse" placeholder="z. B. DSD II, III Medio, Rodrigo Particular"></div>
+<div><label><strong>Kurs</strong></label><select id="studentCourse"></select></div>
 </div>
 <div class="controls">
 <div><label><strong>Thema</strong></label><select id="themeSelect"></select></div>
 <div><label><strong>Übungsform</strong></label><select id="modeSelect">
-<option value="match">1. Zuordnen</option>
-<option value="write">2. Wort schreiben</option>
-<option value="families">3. Wortfamilien</option>
-<option value="prep">4. Verben mit Präpositionen</option>
-<option value="memory">5. Memory</option>
-<option value="crossword">6. Wortkreuzrätsel</option>
-<option value="exam">7. Lückentext</option>
-<option value="mini">8. Meinung schreiben</option>
+<option value="training">Phase 1–2: Zuordnen und Wort schreiben</option>
+<option value="families">Phase 3: Wortfamilien</option>
+<option value="prep">Phase 4: Verben mit Präpositionen</option>
+<option value="memory">Phase 5: Memory</option>
+<option value="crossword">Phase 6: Wortkreuzrätsel</option>
+<option value="exam">Phase 7: Lückentext</option>
+<option value="mini">Phase 8: Meinung schreiben</option>
 </select></div>
 </div>
-<button class="primary" onclick="saveStudent();render()">Übung starten</button>
-<button class="hint" onclick="sendCompleteResults()">Kompletten Bericht senden</button>
+<button class="primary" onclick="saveStudent();render()">Starten</button>
+<button class="hint" onclick="sendCurrentResults()">Gesamtes Protokoll senden</button>
+<button class="secondary" onclick="resetFullSession()">Protokoll neu starten</button>
+<p class="versionNote">Tipp: Arbeite ruhig mehrere Phasen durch. Am Ende wird das gesamte Protokoll an den Lehrer gesendet, nicht nur die letzte Phase.</p>
 <p id="saveStatus" class="small">Noch nicht gesendet.</p>
-<p class="small">Version 7.0 speichert alle geprüften Antworten lokal im Sitzungsbericht. Am Ende wird der komplette Bericht gesendet.</p>
+<div class="logPanel"><p id="sessionLogPreview" class="small"></p><ul id="sessionLogList" class="small"></ul></div>
 </section>
 <section id="content"></section>
-<section class="card">
-  <span class="badge">Sitzungsbericht</span>
-  <h2>Was wird gesendet?</h2>
-  <div id="reportPreview" class="small">Noch keine Aktivität registriert.</div>
-</section>
 </main>
 <script src="data/themes.js"></script>
 <script src="js/config.js"></script>

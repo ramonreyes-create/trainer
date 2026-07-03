@@ -2,21 +2,23 @@ function initialConfig(){
   const c = window.DQ_CONFIG || {};
   document.getElementById("sheetUrl").value = c.sheetUrl || "";
   document.getElementById("schoolName").value = c.schoolName || "DeutschQuest DSD II";
-  document.getElementById("sendMode").value = c.sendMode || "final";
+  document.getElementById("courses").value = (c.courses || ["DSD II", "III Medio", "IV Medio"]).join(", ");
   buildConfig(false);
 }
 function readForm(){
   return {
-    appVersion: "7.0",
+    appVersion: "6.3",
     schoolName: document.getElementById("schoolName").value.trim() || "DeutschQuest DSD II",
     sheetUrl: document.getElementById("sheetUrl").value.trim(),
-    passPercent: 80,
-    sendMode: document.getElementById("sendMode").value || "final"
+    courses: document.getElementById("courses").value.split(",").map(x=>x.trim()).filter(Boolean),
+    passPercent: 80
   };
 }
 function buildConfig(showStatus=true){
   const c = readForm();
-  const code = `// DeutschQuest DSD II 7.0 – GitHub Ready\nwindow.DQ_CONFIG = ${JSON.stringify(c,null,2)};\n`;
+  const code = `// DeutschQuest DSD II 6.3 – GitHub Ready
+window.DQ_CONFIG = ${JSON.stringify(c,null,2)};
+`;
   document.getElementById("configCode").value = code;
   if(showStatus){
     const st=document.getElementById("status");
@@ -46,8 +48,8 @@ async function testConnection(){
     st.className="small saveBad";return;
   }
   try{
-    await fetch(c.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({appVersion:"7.0",timestamp:new Date().toISOString(),sessionId:"TEST",name:"TEST",course:"TEST",theme:"TEST",mode:"Verbindungstest 7.0",correct:1,total:1,percent:100,timeSeconds:0,details:[{timestamp:new Date().toISOString(),sessionId:"TEST",name:"TEST",course:"TEST",theme:"TEST",activity:"Test",item:"Test",prompt:"Test",answer:"Test",expected:"Test",correct:true}],userAgent:navigator.userAgent})});
-    st.textContent="Test gesendet. Prüfe im Google Sheet: Es sollten die Blätter Resumen und Detalle erscheinen.";
+    await fetch(c.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({timestamp:new Date().toISOString(),name:"TEST",course:"TEST",theme:"TEST",mode:"Verbindungstest 6.3",correct:1,total:1,percent:100,timeSeconds:0,errors:"",userAgent:navigator.userAgent})});
+    st.textContent="Test gesendet. Prüfe im Google Sheet, ob eine TEST-Zeile angekommen ist.";
     st.className="small saveOk";
   }catch(e){
     st.textContent="Test fehlgeschlagen. Prüfe Veröffentlichung des Apps Scripts.";

@@ -1,15 +1,38 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DeutschQuest 7.0 – DSD II</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
-<body><header><h1>🇩🇪 DeutschQuest 7.0 – DSD II Wortschatz</h1><p>Offener Kurs mit vollständigem Lehrer-Tracking</p></header><main>
-<section class="card"><h2>Schülerin anmelden</h2><div class="row"><p><label>Name</label><input id="name" placeholder="Name der Schülerin"></p><p><label>Klasse</label><input id="className" placeholder="z. B. DSD II / 11. Klasse"></p></div><button id="saveProfile">Speichern</button><span id="profileMsg" class="muted"></span></section>
-<section class="card"><h2>Themen auswählen</h2><p class="muted">Die Schülerin kann frei ein Thema wählen und danach eine der 8 Aktivitäten bearbeiten.</p><div class="grid" id="topics"></div></section>
-<section class="card"><h2>Lehrermodus</h2><a class="btn" href="teacher.html">teacher.html öffnen</a><p class="muted">Dort findest du die Anleitung für Google Sheets und eine lokale Übersicht.</p></section>
-</main><script src="js/config.js"></script><script src="js/tracking.js"></script><script>
-const p=DQTracker.getProfile(); name.value=p.name||""; className.value=p.className||"";
-saveProfile.onclick=()=>{DQTracker.setProfile({name:name.value.trim(),className:className.value.trim()}); profileMsg.textContent="Gespeichert."; DQTracker.track("profile_saved",{name:name.value.trim(),className:className.value.trim()});};
-DQTracker.track("index_open");
-fetch("data/topics.json").then(r=>r.json()).then(data=>{
- const box=document.getElementById("topics"); box.innerHTML="";
- data.forEach(t=>{const d=document.createElement("div"); d.className="topic"; d.innerHTML=`<div class="big">${t.icon}</div><h3>${t.title}</h3><p class="muted">${t.words.length} Wörter</p>`; d.onclick=()=>{DQTracker.track("topic_open",{topic_id:t.id,topic_title:t.title}); location.href=`topic.html?id=${t.id}`}; box.appendChild(d);});
-});
-</script></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeutschQuest DSD II 8.1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="heroInner">
+    <span class="badge light">Version 8.1 · Visual + Registro Total</span>
+    <h1>DeutschQuest DSD II</h1>
+    <p>Interaktiver Wortschatztrainer für DSD II – jetzt visuell moderner, aber mit dem vollständigen Wortschatz der Version 6.3.</p>
+  </div>
+</header>
+<main>
+<section class="card introCard">
+  <span class="badge">Start</span>
+  <h2>Wähle den passenden Modus</h2>
+  <p>Die Schülerinnen arbeiten im Schüler-Modus. Der Lehrer-Modus dient zur Einrichtung und Kontrolle der Google-Sheets-Verbindung.</p>
+  <div class="navGrid">
+    <a class="navCard big" href="student.html"><strong>Schüler-Modus</strong><span>Übungen starten, Fortschritt sehen und Ergebnisse senden.</span></a>
+    <a class="navCard big" href="teacher.html"><strong>Lehrer-Modus</strong><span>Apps-Script-URL prüfen und Konfiguration vorbereiten.</span></a>
+  </div>
+</section>
+<section class="card">
+  <h2>Was ist enthalten?</h2>
+  <p class="versionNote">Basis: DeutschQuest 6.3. In dieser 8.1 wurde nur die visuelle Oberfläche modernisiert; das Vokabular in <code>data/themes.js</code> bleibt erhalten.</p>
+  <div class="featureGrid">
+    <div><strong>8 Übungsphasen</strong><span>Zuordnen, Schreiben, Wortfamilien, Präpositionen, Memory, Kreuzrätsel, Lückentext, Meinung.</span></div>
+    <div><strong>20 DSD-II-Themen</strong><span>Arbeitswelt, Digitalisierung, KI, Umwelt, Medien, Politik, Europa und weitere Themen aus <code>data/themes.js</code>.</span></div>
+    <div><strong>Google Sheets</strong><span>Ergebnisse können über Apps Script automatisch gespeichert werden.</span></div>
+  </div>
+</section>
+</main>
+</body>
+</html>
