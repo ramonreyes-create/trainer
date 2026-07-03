@@ -1,17 +1,9 @@
-// DeutschQuest DSD II 7.0 – GitHub Ready
-// ------------------------------------------------------------
-// 1. Crea tu Google Sheet.
-// 2. Abre Google Apps Script y pega el código de google/google_apps_script.gs.
-// 3. Publica el Apps Script como Web-App.
-// 4. Copia la URL que termina en /exec.
-// 5. Pega esa URL en sheetUrl, entre las comillas.
-// 6. Sube TODA esta carpeta a GitHub Pages.
-// ------------------------------------------------------------
-
+// DeutschQuest 7.0 – configuración
+// 1) Pega aquí la URL /exec de tu Apps Script.
+// 2) Deja DEMO_MODE=false cuando quieras registrar en Google Sheets.
 window.DQ_CONFIG = {
-  appVersion: "7.0",
-  schoolName: "DeutschQuest DSD II",
-  sheetUrl: "https://script.google.com/macros/s/AKfycbyhftXgft-qz7Rn8tJhrJ7tnvWEjq0AaioGi5fYBPOk6B279WCK9IT2F8AE0k4aGm5s9A/exec", // Ejemplo: "https://script.google.com/macros/s/XXXXXXXX/exec"
-  passPercent: 80,
-  sendMode: "final" // "final" = envío completo al final; "checkpoint" = respaldo automático después de cada comprobación
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbyRVnh_LclnD2OsAVJeHOPVSdNm_Tc9mQ7oQqQHeA0l3vMwUPWT71IgUUGp3FGcnwYFPw/exec",
+  DEMO_MODE: true,
+  COURSE: "DSD II Wortschatz",
+  VERSION: "7.0 Tracking Perfect"
 };

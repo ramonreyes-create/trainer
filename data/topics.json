@@ -1,0 +1,234 @@
+[
+  {
+    "id": "arbeitswelt",
+    "title": "Arbeitswelt",
+    "icon": "💼",
+    "words": [
+      {
+        "de": "die Berufsausbildung",
+        "es": "formación profesional",
+        "def": "praktische Ausbildung für einen Beruf",
+        "ex": "Eine gute Berufsausbildung verbessert die Chancen auf dem Arbeitsmarkt."
+      },
+      {
+        "de": "der Fachkräftemangel",
+        "es": "escasez de personal especializado",
+        "def": "zu wenige qualifizierte Arbeitskräfte",
+        "ex": "Der Fachkräftemangel ist in vielen Branchen ein großes Problem."
+      },
+      {
+        "de": "die Bewerbung",
+        "es": "postulación / solicitud",
+        "def": "Unterlagen für eine Arbeitsstelle",
+        "ex": "Für ein Praktikum braucht man oft eine Bewerbung."
+      },
+      {
+        "de": "das Vorstellungsgespräch",
+        "es": "entrevista laboral",
+        "def": "Gespräch vor einer möglichen Einstellung",
+        "ex": "Im Vorstellungsgespräch sollte man höflich und vorbereitet sein."
+      },
+      {
+        "de": "die Teilzeitstelle",
+        "es": "trabajo de media jornada",
+        "def": "Arbeit mit reduzierter Wochenzeit",
+        "ex": "Viele Studierende suchen eine Teilzeitstelle."
+      },
+      {
+        "de": "die Vollzeitstelle",
+        "es": "trabajo de jornada completa",
+        "def": "Arbeit mit voller Wochenzeit",
+        "ex": "Eine Vollzeitstelle bedeutet meist etwa 40 Stunden pro Woche."
+      },
+      {
+        "de": "die Weiterbildung",
+        "es": "capacitación continua",
+        "def": "zusätzliche Qualifikation nach der Ausbildung",
+        "ex": "Weiterbildung ist wichtig, um beruflich flexibel zu bleiben."
+      },
+      {
+        "de": "das Gehalt",
+        "es": "sueldo",
+        "def": "Geld, das man für Arbeit bekommt",
+        "ex": "Das Gehalt hängt oft von Qualifikation und Erfahrung ab."
+      },
+      {
+        "de": "die Arbeitsbedingungen",
+        "es": "condiciones laborales",
+        "def": "Umstände, unter denen man arbeitet",
+        "ex": "Gute Arbeitsbedingungen erhöhen die Motivation."
+      },
+      {
+        "de": "die Vereinbarkeit",
+        "es": "compatibilidad",
+        "def": "Möglichkeit, zwei Bereiche miteinander zu verbinden",
+        "ex": "Die Vereinbarkeit von Familie und Beruf ist vielen wichtig."
+      }
+    ]
+  },
+  {
+    "id": "medien",
+    "title": "Medienlandschaft",
+    "icon": "📱",
+    "words": [
+      {
+        "de": "die Berichterstattung",
+        "es": "cobertura informativa",
+        "def": "Art, wie Medien über Ereignisse informieren",
+        "ex": "Die Berichterstattung beeinflusst die öffentliche Meinung."
+      },
+      {
+        "de": "die Meinungsfreiheit",
+        "es": "libertad de opinión",
+        "def": "Recht, die eigene Meinung zu äußern",
+        "ex": "Meinungsfreiheit ist für demokratische Gesellschaften zentral."
+      },
+      {
+        "de": "die Desinformation",
+        "es": "desinformación",
+        "def": "bewusst falsche oder irreführende Information",
+        "ex": "Desinformation verbreitet sich in sozialen Netzwerken schnell."
+      },
+      {
+        "de": "die Quelle",
+        "es": "fuente",
+        "def": "Herkunft einer Information",
+        "ex": "Man sollte immer die Quelle prüfen."
+      },
+      {
+        "de": "der Datenschutz",
+        "es": "protección de datos",
+        "def": "Schutz persönlicher Informationen",
+        "ex": "Datenschutz ist im Internet besonders wichtig."
+      },
+      {
+        "de": "die Bildschirmzeit",
+        "es": "tiempo de pantalla",
+        "def": "Zeit, die man vor digitalen Geräten verbringt",
+        "ex": "Zu viel Bildschirmzeit kann die Konzentration stören."
+      },
+      {
+        "de": "der Algorithmus",
+        "es": "algoritmo",
+        "def": "Regel, nach der Inhalte sortiert werden",
+        "ex": "Algorithmen entscheiden oft, welche Beiträge wir sehen."
+      },
+      {
+        "de": "die Öffentlichkeit",
+        "es": "opinión pública / espacio público",
+        "def": "Bereich, in dem gesellschaftlich diskutiert wird",
+        "ex": "Medien prägen die Öffentlichkeit."
+      }
+    ]
+  },
+  {
+    "id": "umwelt",
+    "title": "Umwelt und Nachhaltigkeit",
+    "icon": "🌱",
+    "words": [
+      {
+        "de": "die Nachhaltigkeit",
+        "es": "sostenibilidad",
+        "def": "Handeln mit Blick auf die Zukunft",
+        "ex": "Nachhaltigkeit spielt in der Politik eine wichtige Rolle."
+      },
+      {
+        "de": "der Klimawandel",
+        "es": "cambio climático",
+        "def": "langfristige Veränderung des Klimas",
+        "ex": "Der Klimawandel betrifft alle Länder."
+      },
+      {
+        "de": "die erneuerbaren Energien",
+        "es": "energías renovables",
+        "def": "Energie aus Sonne, Wind oder Wasser",
+        "ex": "Erneuerbare Energien können CO₂ reduzieren."
+      },
+      {
+        "de": "der CO₂-Ausstoß",
+        "es": "emisión de CO₂",
+        "def": "Menge an freigesetztem Kohlenstoffdioxid",
+        "ex": "Der Verkehr verursacht viel CO₂-Ausstoß."
+      },
+      {
+        "de": "die Mülltrennung",
+        "es": "separación de basura",
+        "def": "Abfall nach Materialien sortieren",
+        "ex": "Mülltrennung ist ein einfacher Beitrag zum Umweltschutz."
+      },
+      {
+        "de": "der Ressourcenverbrauch",
+        "es": "consumo de recursos",
+        "def": "Nutzung von Wasser, Energie und Rohstoffen",
+        "ex": "Unser Ressourcenverbrauch ist oft zu hoch."
+      },
+      {
+        "de": "die Umweltbelastung",
+        "es": "contaminación / carga ambiental",
+        "def": "negative Wirkung auf die Umwelt",
+        "ex": "Industrie kann eine starke Umweltbelastung verursachen."
+      },
+      {
+        "de": "das Umweltbewusstsein",
+        "es": "conciencia ambiental",
+        "def": "Bewusstsein für ökologische Probleme",
+        "ex": "Umweltbewusstsein sollte schon in der Schule gefördert werden."
+      }
+    ]
+  },
+  {
+    "id": "jugend",
+    "title": "Kindheit und Jugend",
+    "icon": "🎓",
+    "words": [
+      {
+        "de": "die Persönlichkeitsentwicklung",
+        "es": "desarrollo de la personalidad",
+        "def": "Entwicklung von Charakter und Identität",
+        "ex": "Die Schule unterstützt die Persönlichkeitsentwicklung."
+      },
+      {
+        "de": "der Leistungsdruck",
+        "es": "presión por rendimiento",
+        "def": "Druck, gute Ergebnisse zu erzielen",
+        "ex": "Viele Jugendliche leiden unter Leistungsdruck."
+      },
+      {
+        "de": "die Selbstständigkeit",
+        "es": "autonomía",
+        "def": "Fähigkeit, Dinge eigenverantwortlich zu tun",
+        "ex": "Ein Austausch fördert die Selbstständigkeit."
+      },
+      {
+        "de": "die Zugehörigkeit",
+        "es": "sentido de pertenencia",
+        "def": "Gefühl, Teil einer Gruppe zu sein",
+        "ex": "Zugehörigkeit ist für Jugendliche sehr wichtig."
+      },
+      {
+        "de": "die Chancengleichheit",
+        "es": "igualdad de oportunidades",
+        "def": "gleiche Möglichkeiten für alle",
+        "ex": "Chancengleichheit bleibt ein wichtiges Bildungsziel."
+      },
+      {
+        "de": "die Freizeitgestaltung",
+        "es": "organización del tiempo libre",
+        "def": "Art, wie man Freizeit nutzt",
+        "ex": "Sport ist eine sinnvolle Freizeitgestaltung."
+      },
+      {
+        "de": "die Vorbildfunktion",
+        "es": "función de modelo",
+        "def": "Einfluss durch positives Beispiel",
+        "ex": "Eltern haben oft eine wichtige Vorbildfunktion."
+      },
+      {
+        "de": "die Verantwortung",
+        "es": "responsabilidad",
+        "def": "Pflicht, für Folgen einzustehen",
+        "ex": "Jugendliche sollten Schritt für Schritt Verantwortung übernehmen."
+      }
+    ]
+  }
+]

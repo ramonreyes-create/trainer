@@ -1,60 +1,41 @@
-# DeutschQuest DSD II 7.0 – GitHub Ready
+# DeutschQuest DSD II 7.0 – Tracking Perfect
 
-Esta versión está basada directamente en la versión 6.3 enviada por Ramón.
+Versión optimizada para GitHub Pages.
 
-## Qué mantiene de la 6.3
+## Archivos importantes
+- `index.html`: inicio y selección de temas.
+- `topic.html`: 8 actividades por tema.
+- `teacher.html`: panel docente e instrucciones.
+- `js/config.js`: aquí va la URL del Apps Script.
+- `js/tracking.js`: sistema de tracking completo.
+- `apps_script/Code.gs`: código para Google Sheets.
+- `data/topics.json`: vocabulario DSD II.
 
-- Vocabulario DSD II desde `data/themes.js`.
-- Selección de tema.
-- Actividades de vocabulario por tema.
-- Interfaz visual y estructura base de GitHub Pages.
-- Configuración con `js/config.js`.
-- Integración con Google Sheets mediante Apps Script.
+## Configuración rápida
+1. Sube toda la carpeta a GitHub.
+2. Crea una Google Sheet.
+3. En la Sheet: Extensiones > Apps Script.
+4. Pega `apps_script/Code.gs`.
+5. Implementar > Nueva implementación > Aplicación web.
+6. Ejecutar como: Yo.
+7. Acceso: Cualquier usuario.
+8. Copia la URL `/exec`.
+9. En `js/config.js`, pega la URL en `SCRIPT_URL` y cambia `DEMO_MODE` a `false`.
 
-## Qué mejora en la 7.0
+## Qué registra
+- `profile_saved`
+- `index_open`
+- `topic_open`
+- `topic_page_open`
+- `activity_start`
+- `answer`
+- `dsd_text_submit`
+- `activity_finish`
+- `page_hidden`
+- `page_visible`
+- `page_unload`
 
-- El curso queda abierto: la alumna escribe libremente el curso.
-- Las actividades quedan separadas como 8 actividades:
-  1. Zuordnen
-  2. Wort schreiben
-  3. Wortfamilien
-  4. Verben mit Präpositionen
-  5. Memory
-  6. Wortkreuzrätsel
-  7. Lückentext
-  8. Meinung schreiben
-- Se guarda un historial local completo de lo que hace la alumna.
-- Al presionar **Kompletten Bericht senden**, se envía el reporte completo a Google Sheets.
-- El modo `checkpoint` permite enviar respaldo automático después de cada comprobación.
-
-## Google Sheets
-
-1. Crea un Google Sheet.
-2. Abre Extensiones → Apps Script.
-3. Copia el contenido de `google/google_apps_script.gs`.
-4. Implementa como Web-App.
-5. Copia la URL terminada en `/exec`.
-6. Pégala en `js/config.js`, en `sheetUrl`.
-
-El Apps Script crea dos hojas:
-
-- `Resumen`: resumen general de cada envío.
-- `Detalle`: cada respuesta, cada intento, Memory y textos libres.
-
-## Subida a GitHub
-
-Sube el contenido de esta carpeta, no el ZIP completo.
-
-Archivos/carpetas necesarios:
-
-- `index.html`
-- `student.html`
-- `teacher.html`
-- `css/`
-- `js/`
-- `data/`
-- `google/`
-
-## Importante
-
-Después de subir a GitHub, abre primero `teacher.html`, prueba la conexión con Google Sheets y luego revisa `student.html`.
+## Hojas creadas automáticamente
+- `DQ7_Events`: cada acción detallada.
+- `DQ7_Resumen`: resumen por actividad terminada.
+- `DQ7_Textos`: respuestas abiertas y textos DSD.
