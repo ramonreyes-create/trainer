@@ -1,27 +1,53 @@
-# DeutschQuest DSD II 8.1 – Visual + Registro Total
+# DeutschQuest DSD II 6.3 – GitHub Ready
 
-Base: versión 6.3.
+Esta versión está preparada para GitHub Pages y mejora la versión 6.2.
 
-Esta versión conserva intacto `data/themes.js` de la 6.3 y agrega una interfaz más atractiva junto con un sistema de registro completo.
+## Archivos que debes subir a GitHub
 
-## Registra
+Sube el contenido completo de esta carpeta:
 
-- nombre y curso de la alumna
-- tema elegido
-- fase/actividad realizada
-- respuestas revisadas
-- aciertos y errores
-- textos abiertos escritos
-- tiempo total
-- cambio de pestaña
-- salida de pantalla completa
-- historial completo en Google Sheets
+- `index.html`
+- `student.html`
+- `teacher.html`
+- `css/`
+- `js/`
+- `data/`
+- `google/`
+- `README.md`
+- `CONFIGURAR_ANTES_DE_SUBIR.txt`
 
-## Google Sheets
+No subas solo el archivo ZIP. Deben quedar los archivos visibles en la raíz del repositorio.
 
-Usar el archivo `google/google_apps_script.gs`. El script crea dos hojas:
+## Configuración de Google Sheets
 
-1. `Ergebnisse`: resumen por envío.
-2. `Aktivitaetsprotokoll`: historial completo evento por evento.
+1. Crea un Google Sheet.
+2. Abre Extensiones → Apps Script.
+3. Pega el código de `google/google_apps_script.gs`.
+4. Publica como Web-App.
+5. Copia la URL que termina en `/exec`.
+6. Abre `js/config.js`.
+7. Pega la URL en `sheetUrl`.
 
-Luego copiar la URL `/exec` en `js/config.js`.
+Ejemplo:
+
+```js
+sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
+```
+
+## Uso
+
+- Las alumnas entran en `student.html`.
+- El profesor usa `teacher.html` solo para preparar y comprobar la configuración.
+- `index.html` es la portada general.
+
+## Novedades 6.3
+
+- Portada más clara.
+- Lehrer-Modus más ordenado.
+- Generador de `config.js`.
+- Advertencia clara de que el Lehrer-Modus no modifica GitHub automáticamente.
+- Versión coherente 6.3 en HTML y JS.
+
+
+## Version 8.2 Original + Registro Total
+Esta versión conserva el diseño y la estructura funcional de la 6.3. La única mejora central es el registro completo de la sesión: temas, cambios de actividad, respuestas, intentos, puntajes, tiempos, cambios de pestaña y salida/entrada de pantalla completa.

@@ -1,4 +1,4 @@
-// DeutschQuest DSD II 8.0 – GitHub Ready
+// DeutschQuest DSD II 8.2 Original + Registro Total – GitHub Ready
 // ------------------------------------------------------------
 // CONFIGURACIÓN IMPORTANTE
 // 1. Crea tu Google Sheet.
@@ -10,9 +10,9 @@
 // ------------------------------------------------------------
 
 window.DQ_CONFIG = {
-  appVersion: "8.0",
+  appVersion: "8.2 Original + Registro Total",
   schoolName: "DeutschQuest DSD II",
-  sheetUrl: "https://script.google.com/macros/s/AKfycbzzwDm9iiBFK5fxTSZCYPH099RHxYbBs9pp_yIMXFJ5mXw9jTSo9ni8MpMDcY_nrXWz6Q/exec", // Ejemplo: "https://script.google.com/macros/s/XXXXXXXX/exec"
+  sheetUrl: "https://script.google.com/macros/s/AKfycbzepkE0xS0bkkrpIPacH1QTtxCFa-On73MIoXWRtH-sRkYmGi9N3Ztw9UsmlnwcNUj1sQ/exec", // Ejemplo: "https://script.google.com/macros/s/XXXXXXXX/exec"
   courses: ["DSD II", "III Medio", "IV Medio"],
   passPercent: 80
 };

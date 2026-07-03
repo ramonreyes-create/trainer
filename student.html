@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II 8.1 – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeutschQuest DSD II – Schüler</title><link rel="stylesheet" href="css/style.css"></head>
 <body>
-<header class="hero"><div class="heroInner"><span class="badge light">Version 8.1 · Schüler-Modus</span><h1>DeutschQuest DSD II</h1><p>Wortschatztraining für DSD II: Themen wählen, üben, Punkte sammeln und Ergebnisse senden.</p></div></header>
+<header><h1>DeutschQuest DSD II 8.2</h1><p>Schüler-Modus · Wortschatz, Erörterung und Training</p></header>
 <div class="scoreBox"><div class="scoreInner"><span class="pill">Punkte: <span id="score">0</span>/<span id="total">0</span></span><div class="progress"><div id="bar" class="bar"></div></div><button class="secondary" onclick="resetCurrent()">Neu starten</button></div></div>
 <main>
 <section class="card">
-<span class="badge">Start</span><h2>Bereit für dein Training?</h2><p class="small">Wähle dein Thema und eine Übungsform. Der Wortschatz stammt vollständig aus der Version 6.3. Diese Version speichert den kompletten Lernweg.</p>
+<span class="badge">Start</span><h2>Daten eingeben</h2>
 <div class="controls">
 <div><label><strong>Name</strong></label><input id="studentName" placeholder="Name"></div>
 <div><label><strong>Kurs</strong></label><select id="studentCourse"></select></div>
@@ -25,10 +25,7 @@
 </div>
 <button class="primary" onclick="saveStudent();render()">Starten</button>
 <button class="hint" onclick="sendCurrentResults()">Gesamtes Protokoll senden</button>
-<button class="secondary" onclick="resetFullSession()">Protokoll neu starten</button>
-<p class="versionNote">Tipp: Arbeite ruhig mehrere Phasen durch. Am Ende wird das gesamte Protokoll an den Lehrer gesendet, nicht nur die letzte Phase.</p>
 <p id="saveStatus" class="small">Noch nicht gesendet.</p>
-<div class="logPanel"><p id="sessionLogPreview" class="small"></p><ul id="sessionLogList" class="small"></ul></div>
 </section>
 <section id="content"></section>
 </main>
