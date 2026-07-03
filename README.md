@@ -58,3 +58,11 @@ Esta versión conserva el diseño y la estructura funcional de la 6.3. La única
 - Das Aktivitätsprotokoll wird im Schüler-Modus nicht sichtbar angezeigt.
 - Das vollständige Protokoll wird weiterhin intern gesammelt und an Google Sheets gesendet.
 - Beim Senden erscheint für die Schülerin nur der Status „Wird gesendet …“ und danach „Gesendet“.
+
+
+## Version 8.6
+
+- Basada en el diseño estable 6.3 / 8.3.
+- Registro total oculto en modo estudiante.
+- Lückentext revisado pedagógicamente: frases naturales por tema DSD II, sin oraciones automáticas sin sentido.
+- Mantiene todas las Übungsformen existentes.

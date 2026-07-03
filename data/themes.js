@@ -147,14 +147,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Nach der Schule entscheiden sich viele Jugendliche für eine ___, weil sie praktische Erfahrungen sammeln möchten.",
         "Für eine Stelle muss man meistens eine überzeugende ___ schreiben.",
-        "Auch ein klar strukturierter ___ ist wichtig, damit der Arbeitgeber die Qualifikationen erkennen kann.",
-        "Im ___ möchte der Arbeitgeber herausfinden, ob die Person zur Stelle passt.",
-        "Ein guter ___ bietet nicht nur Sicherheit, sondern auch Entwicklungsmöglichkeiten.",
-        "Viele Unternehmen erwarten heute erste ___.",
-        "Wer in einem Team arbeitet, muss auch ___ übernehmen.",
-        "Durch ___ kann man seine Chancen auf dem Arbeitsmarkt verbessern."
+        "Ein klar strukturierter ___ zeigt die wichtigsten Qualifikationen einer Person.",
+        "Im ___ möchte der Arbeitgeber herausfinden, ob die Bewerberin zur Stelle passt.",
+        "Eine duale ___ verbindet praktische Arbeit im Betrieb mit theoretischem Lernen.",
+        "Ein sicherer ___ gibt vielen Menschen finanzielle Stabilität.",
+        "Viele Unternehmen erwarten heute erste ___, auch bei jungen Bewerberinnen.",
+        "Wer ein Projekt leitet, muss viel ___ übernehmen.",
+        "Durch regelmäßige ___ kann man seine Chancen auf dem Arbeitsmarkt verbessern.",
+        "Nicht alle Jugendlichen planen sofort eine steile ___, viele suchen zuerst Orientierung.",
+        "Lang andauernde ___ kann das Selbstvertrauen stark belasten."
       ],
       "items": [
         [
@@ -188,6 +190,14 @@ window.THEMES = [
         [
           "Weiterbildung",
           "formación continua"
+        ],
+        [
+          "Karriere",
+          "carrera profesional"
+        ],
+        [
+          "Arbeitslosigkeit",
+          "desempleo"
         ]
       ]
     }
@@ -340,14 +350,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Die ___ verändert den Alltag von Jugendlichen, Familien und Schulen.",
-        "Eine wichtige Fähigkeit ist ___, denn man muss Informationen kritisch prüfen.",
-        "Beim Surfen im Internet spielt ___ eine große Rolle.",
-        "Viele Jugendliche achten zu wenig auf ihre ___.",
-        "Ein ___ entscheidet oft, welche Inhalte man online sieht.",
-        "Die intensive ___ digitaler Medien kann Vorteile, aber auch Probleme bringen.",
-        "Diese technische ___ beeinflusst auch das Lernen in der Schule.",
-        "Ständige Nachrichten können zu ___ führen."
+        "Gute ___ hilft Jugendlichen, Informationen im Internet kritisch zu bewerten.",
+        "Beim Umgang mit persönlichen Daten spielt ___ eine zentrale Rolle.",
+        "In sozialen Netzwerken sollte man die eigene ___ schützen.",
+        "Ein ___ entscheidet oft, welche Inhalte Nutzerinnen und Nutzer zuerst sehen.",
+        "Die intensive ___ digitaler Medien kann sowohl Vorteile als auch Risiken haben.",
+        "Die digitale ___ betrifft Schule, Beruf und Alltag gleichermaßen.",
+        "Technische ___ ermöglicht neue Formen des Lernens und Arbeitens.",
+        "Digitale Medien haben einen großen ___ auf Kommunikation und Freizeit.",
+        "Eine starke ___ vom Smartphone kann Konzentration und Schlaf beeinträchtigen.",
+        "Durch ständige Benachrichtigungen entsteht leicht ___ im Unterricht."
       ],
       "items": [
         [
@@ -381,6 +393,14 @@ window.THEMES = [
         [
           "Einfluss",
           "influencia"
+        ],
+        [
+          "Abhängigkeit",
+          "dependencia"
+        ],
+        [
+          "Ablenkung",
+          "distracción"
         ]
       ]
     }
@@ -533,14 +553,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Durch ___ können viele Arbeitsprozesse schneller erledigt werden.",
-        "Künstliche Intelligenz gilt als wichtige ___ in der modernen Arbeitswelt.",
-        "Unternehmen hoffen, durch KI die ___ zu steigern.",
-        "Gleichzeitig befürchten viele Menschen ___ in bestimmten Berufen.",
-        "Eine ___ kann heute Aufgaben übernehmen, die früher Menschen erledigt haben.",
-        "Problematisch wird es, wenn eine KI eine wichtige ___ trifft.",
-        "Dann stellt sich die Frage nach der ___.",
-        "Deshalb braucht man klare Regeln und menschliche ___."
+        "Durch ___ können wiederkehrende Aufgaben schneller erledigt werden.",
+        "Künstliche Intelligenz gilt in vielen Bereichen als wichtige ___.",
+        "Unternehmen hoffen durch KI auf mehr ___ und geringere Kosten.",
+        "Viele Menschen fürchten durch Automatisierung einen ___.",
+        "Eine ___ kann große Datenmengen schneller auswerten als ein Mensch.",
+        "Bei wichtigen Fragen sollte die endgültige ___ nicht allein einer KI überlassen werden.",
+        "Wenn KI Fehler macht, muss die ___ klar geregelt sein.",
+        "Ohne menschliche ___ können automatisierte Systeme problematische Folgen haben.",
+        "Eine mögliche ___ besteht darin, dass Vorurteile in Daten übernommen werden.",
+        "Gleichzeitig bietet KI auch die ___, Bildung individueller zu gestalten."
       ],
       "items": [
         [
@@ -574,6 +596,14 @@ window.THEMES = [
         [
           "Kontrolle",
           "control"
+        ],
+        [
+          "Gefahr",
+          "peligro"
+        ],
+        [
+          "Chance",
+          "oportunidad"
         ]
       ]
     }
@@ -726,14 +756,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "___ ist eine zentrale Aufgabe moderner Gesellschaften.",
-        "Der Schutz der ___ betrifft nicht nur Tiere und Pflanzen, sondern auch den Menschen.",
-        "Durch industrielle Produktion entsteht oft ___ von Luft, Wasser und Boden.",
-        "Jede ___ sollte bewusst genutzt und nicht verschwendet werden.",
-        "Eine konkrete ___ ist zum Beispiel die Reduktion von Plastik.",
-        "Auch Konsumentinnen und Konsumenten tragen ___.",
-        "Zu viel Verkehr führt zu einer starken ___ der Umwelt.",
-        "Der ___ der Artenvielfalt ist für zukünftige Generationen wichtig."
+        "Wirksamer ___ beginnt oft mit kleinen Entscheidungen im Alltag.",
+        "Die ___ liefert wichtige Lebensgrundlagen für Menschen, Tiere und Pflanzen.",
+        "Durch industrielle ___ werden Luft, Wasser und Böden belastet.",
+        "Wasser ist eine wertvolle ___, mit der man sparsam umgehen sollte.",
+        "Eine konkrete ___ gegen Müll ist die Verwendung von Mehrwegflaschen.",
+        "Beim Schutz der Umwelt trägt jeder Mensch eine gewisse ___.",
+        "Lärm und Abgase führen in Städten zu einer hohen ___.",
+        "Der ___ natürlicher Lebensräume ist für viele Tierarten entscheidend.",
+        "Durch ___ kann man Verpackungen und unnötigen Abfall reduzieren.",
+        "Die ___ ist wichtig, damit Ökosysteme stabil bleiben."
       ],
       "items": [
         [
@@ -767,6 +799,14 @@ window.THEMES = [
         [
           "Erhalt",
           "conservación"
+        ],
+        [
+          "Müllvermeidung",
+          "evitar basura"
+        ],
+        [
+          "Artenvielfalt",
+          "biodiversidad"
         ]
       ]
     }
@@ -920,13 +960,15 @@ window.THEMES = [
     "luecken": {
       "sentences": [
         "Der ___ gehört zu den größten Herausforderungen unserer Zeit.",
-        "Eine Ursache ist die ___, die weltweit messbar ist.",
-        "Vor allem der hohe ___ beschleunigt diese Entwicklung.",
-        "Eine mögliche ___ sind extreme Wetterereignisse.",
-        "In manchen Regionen kommt es häufiger zu ___.",
-        "In anderen Gebieten nehmen starke Regenfälle und ___ zu.",
+        "Die ___ führt dazu, dass Gletscher schmelzen und Meeresspiegel steigen.",
+        "Ein hoher ___ entsteht vor allem durch Verkehr, Industrie und Energieverbrauch.",
+        "Eine mögliche ___ des Klimawandels ist die Zunahme extremer Wetterereignisse.",
         "Neben der Vermeidung ist auch ___ an neue Bedingungen nötig.",
-        "Politik und Gesellschaft müssen mehr für den ___ tun."
+        "In manchen Regionen verursacht lange ___ große Probleme für die Landwirtschaft.",
+        "Starke Regenfälle können zu einer gefährlichen ___ führen.",
+        "Beim ___ geht es darum, Emissionen deutlich zu verringern.",
+        "Jede zusätzliche ___ verstärkt den Treibhauseffekt.",
+        "Der globale ___ macht Hitzewellen wahrscheinlicher."
       ],
       "items": [
         [
@@ -960,6 +1002,14 @@ window.THEMES = [
         [
           "Klimaschutz",
           "protección climática"
+        ],
+        [
+          "Emission",
+          "emisión"
+        ],
+        [
+          "Temperaturanstieg",
+          "aumento de temperatura"
         ]
       ]
     }
@@ -1112,14 +1162,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "In einer Demokratie ist unabhängige ___ besonders wichtig.",
-        "Die ___ schützt Journalistinnen und Journalisten vor politischem Druck.",
-        "Nicht jede ___ im Internet ist automatisch wahr.",
-        "Deshalb sollte man immer die ___ überprüfen.",
-        "Man muss zwischen Information und ___ unterscheiden.",
-        "Soziale Netzwerke können auch zur ___ genutzt werden.",
-        "Eine ___ verbreitet falsche Informationen sehr schnell.",
-        "Gute ___ erhöht die Glaubwürdigkeit der Medien."
+        "Ausgewogene ___ informiert nicht nur schnell, sondern auch zuverlässig.",
+        "In einer Demokratie ist ___ besonders wichtig.",
+        "Eine seriöse ___ unterscheidet Fakten klar von Meinungen.",
+        "Vor einer Diskussion sollte man die ___ einer Information prüfen.",
+        "Eine persönliche ___ darf nicht als Tatsache dargestellt werden.",
+        "Durch gezielte ___ kann die öffentliche Meinung beeinflusst werden.",
+        "Eine ___ verbreitet sich online oft schneller als eine Korrektur.",
+        "Wichtige Themen werden in der ___ breit diskutiert.",
+        "Gründliche ___ ist die Grundlage guten Journalismus.",
+        "Die ___ einer Zeitung hängt von ihrer Genauigkeit und Unabhängigkeit ab."
       ],
       "items": [
         [
@@ -1153,6 +1205,14 @@ window.THEMES = [
         [
           "Öffentlichkeit",
           "opinión pública"
+        ],
+        [
+          "Recherche",
+          "investigación"
+        ],
+        [
+          "Glaubwürdigkeit",
+          "credibilidad"
         ]
       ]
     }
@@ -1305,14 +1365,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Die ___ ist für die Lebensqualität eines Menschen entscheidend.",
-        "Durch ___ können viele Krankheiten vermieden werden.",
+        "Körperliche und psychische ___ sind für ein gutes Leben wichtig.",
+        "Durch ___ lassen sich viele Krankheiten früh vermeiden.",
         "Regelmäßige ___ stärkt den Körper und reduziert Stress.",
-        "Eine hohe psychische ___ kann das Lernen beeinträchtigen.",
-        "Auch das persönliche ___ spielt eine wichtige Rolle.",
-        "Bei einer schweren ___ braucht man professionelle Hilfe.",
-        "Eine gute ___ verbessert die Chancen auf Heilung.",
-        "Viele Jugendliche leiden wegen Handynutzung unter ___."
+        "Dauerhafte ___ kann zu Schlafproblemen und Erschöpfung führen.",
+        "Ausreichender Schlaf fördert das allgemeine ___.",
+        "Eine schwere ___ verändert oft den Alltag der ganzen Familie.",
+        "Eine passende ___ muss individuell mit Fachleuten besprochen werden.",
+        "Zur ___ gehören regelmäßige Untersuchungen und Beratung.",
+        "Bei Jugendlichen kann ___ die Konzentration in der Schule schwächen.",
+        "Eine ___ entwickelt sich oft langsam und braucht professionelle Hilfe."
       ],
       "items": [
         [
@@ -1346,6 +1408,14 @@ window.THEMES = [
         [
           "Vorsorge",
           "prevención médica"
+        ],
+        [
+          "Schlafmangel",
+          "falta de sueño"
+        ],
+        [
+          "Sucht",
+          "adicción"
         ]
       ]
     }
@@ -1498,14 +1568,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Eine gesunde ___ ist besonders im Jugendalter wichtig.",
-        "Frische ___ liefern dem Körper Energie und Vitamine.",
-        "Zu viel ___ kann langfristig gesundheitliche Probleme verursachen.",
-        "Auch ein hoher Anteil an ___ ist problematisch.",
-        "Entscheidend ist die ___ zwischen verschiedenen Nahrungsmitteln.",
-        "Ein ___ an Vitaminen kann die Konzentration schwächen.",
-        "Falsche Ernährung kann zu ___ führen.",
-        "Viele Jugendliche entwickeln ihre ___ durch Familie, Schule und Medien."
+        "Eine ausgewogene ___ versorgt den Körper mit Energie und wichtigen Stoffen.",
+        "Frische ___ sind oft gesünder als stark verarbeitete Produkte.",
+        "Zu viel ___ in Getränken kann langfristig der Gesundheit schaden.",
+        "Auch zu viel ___ erhöht das Risiko für bestimmte Krankheiten.",
+        "Bei einer guten Ernährung kommt es auf ___ an.",
+        "Ein ___ an Vitaminen kann Müdigkeit und Konzentrationsprobleme verursachen.",
+        "Dauerhaftes ___ kann Herz und Gelenke belasten.",
+        "Viele ___ entstehen bereits in der Kindheit.",
+        "Ein wichtiger ___ für Jugendliche ist zum Beispiel Eisen.",
+        "Regelmäßiges ___ ist bequem, aber oft sehr kalorienreich."
       ],
       "items": [
         [
@@ -1539,6 +1611,14 @@ window.THEMES = [
         [
           "Essgewohnheit",
           "hábito alimenticio"
+        ],
+        [
+          "Nährstoff",
+          "nutriente"
+        ],
+        [
+          "Fastfood",
+          "comida rápida"
         ]
       ]
     }
@@ -1691,14 +1771,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "In der Schule sollte ___ für alle Lernenden ein wichtiges Ziel sein.",
-        "Nicht nur die ___, sondern auch die persönliche Entwicklung zählt.",
-        "Die ___ von Schülerinnen und Schülern ist oft umstritten.",
-        "Eine ___ kann motivieren, aber auch Druck erzeugen.",
-        "Zu viel ___ wirkt sich negativ auf das Wohlbefinden aus.",
-        "Individuelle ___ hilft besonders schwächeren Lernenden.",
-        "Eine wichtige ___ ist die Fähigkeit, selbstständig Probleme zu lösen.",
-        "Guter ___ verbindet Wissen, Anwendung und Reflexion."
+        "___ bedeutet, dass Herkunft nicht über Bildungserfolg entscheiden sollte.",
+        "Nicht jede schulische ___ lässt sich durch eine Note gerecht abbilden.",
+        "Eine faire ___ berücksichtigt verschiedene Kompetenzen der Schülerinnen.",
+        "Die ___ ist in vielen Ländern weiterhin ein zentrales Bewertungsinstrument.",
+        "Zu hoher ___ kann Motivation und Gesundheit belasten.",
+        "Individuelle ___ hilft besonders Schülerinnen mit Lernschwierigkeiten.",
+        "Eine wichtige ___ ist, Informationen selbstständig zu strukturieren.",
+        "Guter ___ verbindet klare Ziele mit aktiver Beteiligung.",
+        "In der Oberstufe wird ___ immer wichtiger.",
+        "___ ist ein wichtiges Ziel moderner Schulpolitik."
       ],
       "items": [
         [
@@ -1732,6 +1814,14 @@ window.THEMES = [
         [
           "Unterricht",
           "clase"
+        ],
+        [
+          "Selbstständigkeit",
+          "autonomía"
+        ],
+        [
+          "Bildungsgerechtigkeit",
+          "justicia educativa"
         ]
       ]
     }
@@ -1884,14 +1974,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "___ ist ein wichtiges Thema in vielen europäischen Ländern.",
-        "Gute ___ bedeutet, dass Menschen aktiv am gesellschaftlichen Leben teilnehmen können.",
-        "Die ___ einer Person darf nicht zu Benachteiligung führen.",
+        "___ kann durch Krieg, Arbeit, Studium oder Familie ausgelöst werden.",
+        "Gelungene ___ braucht Sprache, Bildung und gegenseitige Offenheit.",
+        "Die ___ eines Menschen prägt oft seine Erfahrungen und Perspektiven.",
         "Kulturelle ___ kann eine Gesellschaft bereichern.",
-        "Eine offene ___ braucht Respekt und klare Regeln.",
-        "Die ___ ist oft ein Schlüssel zur Integration.",
-        "Bildung ermöglicht gesellschaftliche ___.",
-        "Gleichzeitig bleibt Integration eine große ___."
+        "Eine demokratische ___ sollte allen Menschen faire Chancen bieten.",
+        "Die deutsche ___ ist für viele Zugewanderte der Schlüssel zur Teilhabe.",
+        "Politische ___ bedeutet, dass Menschen mitentscheiden können.",
+        "Eine große ___ besteht darin, Vorurteile abzubauen.",
+        "Ein ___ entsteht oft aus Unwissenheit oder Angst.",
+        "___ verletzt Menschen und verhindert echte Integration."
       ],
       "items": [
         [
@@ -1925,6 +2017,14 @@ window.THEMES = [
         [
           "Herausforderung",
           "desafío"
+        ],
+        [
+          "Vorurteil",
+          "prejuicio"
+        ],
+        [
+          "Diskriminierung",
+          "discriminación"
         ]
       ]
     }
@@ -2077,14 +2177,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Die ___ prägt Kinder und Jugendliche stark.",
-        "Eine sichere ___ kann das Selbstvertrauen stärken.",
-        "In der ___ suchen viele junge Menschen nach ihrer Identität.",
-        "Eltern sollten Schritt für Schritt ___ ermöglichen.",
-        "Eine gute Beziehung basiert auf ___.",
-        "In Familien gibt es manchmal ___ zwischen Eltern und Kindern.",
-        "Eine stabile ___ bietet Orientierung.",
-        "Gerade in schwierigen Phasen ist ___ sehr wichtig."
+        "In der ___ lernen Kinder grundlegende Werte und Regeln.",
+        "Eine glückliche ___ prägt viele Erinnerungen an die ersten Lebensjahre.",
+        "In der ___ suchen viele Menschen nach mehr Freiheit und Anerkennung.",
+        "Mit wachsender ___ übernehmen Jugendliche mehr Verantwortung.",
+        "Gegenseitiges ___ ist eine wichtige Basis für das Familienleben.",
+        "Ein ___ entsteht oft, wenn Eltern und Kinder unterschiedliche Erwartungen haben.",
+        "Eine stabile ___ zwischen Eltern und Kindern braucht Zeit und Gespräche.",
+        "Viele Jugendliche brauchen bei Problemen emotionale ___.",
+        "Zu viel ___ ohne Verantwortung kann im Alltag schwierig werden.",
+        "Eine klare ___ hilft Kindern, Orientierung zu finden."
       ],
       "items": [
         [
@@ -2118,6 +2220,14 @@ window.THEMES = [
         [
           "Unterstützung",
           "apoyo"
+        ],
+        [
+          "Freiheit",
+          "libertad"
+        ],
+        [
+          "Grenze",
+          "límite"
         ]
       ]
     }
@@ -2270,14 +2380,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Das ___ ist ein wichtiger Bestandteil der Zivilgesellschaft.",
-        "Durch soziales ___ können Jugendliche Verantwortung lernen.",
-        "Viele ___ helfen in Vereinen oder sozialen Projekten.",
-        "___ bedeutet, andere Menschen nicht allein zu lassen.",
-        "Ein starkes Ehrenamt stärkt die ___.",
-        "Wer sich engagiert, übernimmt ___.",
-        "___ ist besonders in Krisensituationen wichtig.",
-        "Ein ___ bietet oft Möglichkeiten zur aktiven Mitarbeit."
+        "Ein ___ zeigt, dass Menschen sich ohne Bezahlung für andere einsetzen.",
+        "Soziales ___ stärkt den Zusammenhalt in einer Gesellschaft.",
+        "Viele ___ helfen in Sportvereinen, Schulen oder sozialen Einrichtungen.",
+        "___ bedeutet, Menschen in schwierigen Situationen nicht allein zu lassen.",
+        "Eine starke ___ entsteht, wenn viele Menschen einander unterstützen.",
+        "Auch im Ehrenamt trägt man ___ für die übernommenen Aufgaben.",
+        "___ ist besonders wichtig, wenn schnelle Hilfe gebraucht wird.",
+        "Ein ___ bietet Jugendlichen die Möglichkeit, Verantwortung zu übernehmen.",
+        "Eine kleine ___ kann für ein soziales Projekt viel bewirken.",
+        "Durch ___ fühlen sich Menschen als aktiver Teil der Gesellschaft."
       ],
       "items": [
         [
@@ -2311,6 +2423,14 @@ window.THEMES = [
         [
           "Verein",
           "asociación"
+        ],
+        [
+          "Spende",
+          "donación"
+        ],
+        [
+          "Mitwirkung",
+          "colaboración"
         ]
       ]
     }
@@ -2463,14 +2583,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Unser ___ beeinflusst Wirtschaft, Umwelt und Gesellschaft.",
-        "___ kann Wünsche erzeugen und Kaufentscheidungen beeinflussen.",
-        "Das ___ vieler Menschen wird durch soziale Medien geprägt.",
-        "Auch die ___ von Waren verbraucht Energie und Rohstoffe.",
-        "Jede ___ ist begrenzt und sollte geschont werden.",
-        "Konsumenten tragen ___ für ihre Entscheidungen.",
-        "Billige Produkte verursachen oft eine hohe ___.",
-        "Manchmal ist bewusster ___ nachhaltiger als ständiges Kaufen."
+        "Unser täglicher ___ beeinflusst Umwelt, Wirtschaft und Gesellschaft.",
+        "___ versucht oft, Bedürfnisse zu wecken, die vorher gar nicht da waren.",
+        "Das ___ vieler Jugendlicher wird stark von sozialen Medien beeinflusst.",
+        "Die ___ billiger Kleidung verursacht häufig ökologische Probleme.",
+        "Für jedes Produkt werden Wasser, Energie und andere ___ benötigt.",
+        "Nachhaltiger Konsum bedeutet auch persönliche ___.",
+        "Übermäßiger Konsum führt zu hoher ___.",
+        "Bewusster ___ kann helfen, Ressourcen zu schonen.",
+        "Gute ___ ist oft wichtiger als ein niedriger Preis.",
+        "Die ___ beschreibt eine Gesellschaft, in der Produkte schnell ersetzt werden."
       ],
       "items": [
         [
@@ -2504,6 +2626,14 @@ window.THEMES = [
         [
           "Verzicht",
           "renuncia"
+        ],
+        [
+          "Qualität",
+          "calidad"
+        ],
+        [
+          "Wegwerfgesellschaft",
+          "sociedad desechable"
         ]
       ]
     }
@@ -2656,14 +2786,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "___ ist wichtig, damit Menschen arbeiten, lernen und reisen können.",
-        "Zu viel ___ belastet Städte und Umwelt.",
-        "In großen Städten stehen viele Menschen täglich im ___.",
-        "Das ___ ist eine umweltfreundliche Alternative.",
-        "Gute ___ macht öffentliche Verkehrsmittel attraktiver.",
-        "___ kann helfen, Emissionen zu reduzieren.",
-        "Jede ___ trägt zur Luftbelastung bei.",
-        "Die ___ von Schulen und Arbeitsplätzen ist sozial wichtig."
+        "Moderne ___ soll schnell, bezahlbar und umweltfreundlich sein.",
+        "Zu viel ___ in Innenstädten belastet Klima und Gesundheit.",
+        "Ein langer ___ kostet täglich Zeit und Nerven.",
+        "Das ___ ist in vielen Städten eine klimafreundliche Alternative.",
+        "Eine gute ___ macht Bus, Bahn und Radfahren attraktiver.",
+        "___ kann den Verkehr sauberer machen, wenn der Strom erneuerbar ist.",
+        "Jede ___ aus dem Verkehr trägt zum Klimawandel bei.",
+        "Gute ___ ist besonders auf dem Land ein wichtiges Thema.",
+        "Nicht jedes ___ ist für jede Strecke sinnvoll.",
+        "Nachhaltige ___ muss Wohnen, Arbeit und Verkehr zusammen denken."
       ],
       "items": [
         [
@@ -2697,6 +2829,14 @@ window.THEMES = [
         [
           "Erreichbarkeit",
           "accesibilidad"
+        ],
+        [
+          "Verkehrsmittel",
+          "medio de transporte"
+        ],
+        [
+          "Stadtplanung",
+          "planificación urbana"
         ]
       ]
     }
@@ -2849,14 +2989,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "___ ist wichtig, um sich vom Schulalltag zu erholen.",
-        "Viele Jugendliche brauchen ___ nach stressigen Tagen.",
-        "Ein ___ kann Kreativität und Motivation fördern.",
-        "In einem ___ lernt man Teamarbeit.",
-        "Regelmäßiger ___ stärkt Körper und Psyche.",
-        "Freizeit bietet einen ___ zur Schule.",
-        "Zu viel ___ kann jedoch die Konzentration schwächen.",
-        "Auch ___ ist wichtig für das Wohlbefinden."
+        "In der ___ können Jugendliche sich erholen und eigene Interessen entwickeln.",
+        "Gute ___ ist wichtig, damit Körper und Geist neue Kraft sammeln.",
+        "Ein ___ kann helfen, Stress abzubauen und Talente zu entdecken.",
+        "In einem ___ lernen Jugendliche Teamarbeit und Verlässlichkeit.",
+        "Regelmäßiger ___ fördert Gesundheit und Konzentration.",
+        "Ein sinnvoller ___ zur Schule schützt vor Überforderung.",
+        "Zu viel ___ kann andere Aktivitäten verdrängen.",
+        "Bewusste ___ hilft vielen Menschen, nach einem langen Tag abzuschalten.",
+        "Eine gemeinsame ___ stärkt Freundschaften.",
+        "In einer ___ fühlt man sich oft weniger allein."
       ],
       "items": [
         [
@@ -2890,6 +3032,14 @@ window.THEMES = [
         [
           "Entspannung",
           "relajación"
+        ],
+        [
+          "Aktivität",
+          "actividad"
+        ],
+        [
+          "Gemeinschaft",
+          "comunidad"
         ]
       ]
     }
@@ -3042,14 +3192,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "___ bedeutet, heute so zu handeln, dass morgen noch genug bleibt.",
-        "Jede ___ sollte sparsam genutzt werden.",
-        "Politik, Wirtschaft und Bürger tragen ___.",
-        "Nachhaltiges Handeln richtet sich auf die ___.",
-        "Auch die nächste ___ soll gute Lebensbedingungen haben.",
-        "___ von Materialien reduziert Müll.",
-        "Die ___ versucht, Produkte länger im System zu halten.",
-        "Nachhaltigkeit fördert auch den ___."
+        "___ bedeutet, so zu leben, dass auch zukünftige Generationen Chancen haben.",
+        "Jede ___ sollte sparsam und bewusst genutzt werden.",
+        "Nachhaltigkeit verlangt persönliche und politische ___.",
+        "Entscheidungen von heute beeinflussen die ___ kommender Generationen.",
+        "Die junge ___ fordert oft mehr Klimaschutz.",
+        "Durch ___ können Materialien erneut genutzt werden.",
+        "In einer ___ bleiben Produkte und Rohstoffe möglichst lange im Umlauf.",
+        "Konsequenter ___ braucht Maßnahmen in Politik, Wirtschaft und Alltag.",
+        "Ein hoher ___ von Energie und Rohstoffen belastet die Umwelt.",
+        "Mehr ___ kann zu nachhaltigeren Entscheidungen führen."
       ],
       "items": [
         [
@@ -3083,6 +3235,14 @@ window.THEMES = [
         [
           "Klimaschutz",
           "protección climática"
+        ],
+        [
+          "Verbrauch",
+          "consumo/gasto"
+        ],
+        [
+          "Bewusstsein",
+          "conciencia"
         ]
       ]
     }
@@ -3235,14 +3395,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "In vielen Städten ist bezahlbarer ___ knapp.",
-        "Hohe ___ belastet besonders junge Menschen und Familien.",
-        "Eine kleine ___ kann in Großstädten sehr teuer sein.",
-        "Eine gute ___ trägt zum Wohlbefinden bei.",
-        "Wohnen beeinflusst die ___.",
-        "Die ___ entscheidet, wie Städte wachsen.",
-        "Ein steigender ___ führt oft zu sozialer Ungleichheit.",
-        "Bei ___ müssen viele Menschen lange nach einer Unterkunft suchen."
+        "Bezahlbarer ___ ist in vielen Großstädten knapp geworden.",
+        "Eine hohe ___ belastet besonders Familien mit geringem Einkommen.",
+        "Eine kleine ___ kann teuer sein, wenn sie zentral liegt.",
+        "Eine gute ___ erhöht das Sicherheitsgefühl im Wohnviertel.",
+        "Die ___ hängt auch von Lärm, Grünflächen und Verkehr ab.",
+        "Durch ___ verändern sich ganze Stadtteile.",
+        "Ein steigender ___ macht das Leben in der Stadt schwieriger.",
+        "___ ist ein soziales Problem, das viele junge Menschen betrifft.",
+        "Die ___ einer Wohnung entscheidet oft über Wege zur Schule oder Arbeit.",
+        "In einem ___ müssen Aufgaben gerecht verteilt werden."
       ],
       "items": [
         [
@@ -3276,6 +3438,14 @@ window.THEMES = [
         [
           "Wohnungsnot",
           "escasez de vivienda"
+        ],
+        [
+          "Lage",
+          "ubicación"
+        ],
+        [
+          "Haushalt",
+          "hogar"
         ]
       ]
     }
@@ -3428,14 +3598,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Eine niedrige ___ verändert langfristig die Struktur eines Landes.",
-        "Die ___ der Gesellschaft stellt den Sozialstaat vor Probleme.",
-        "Wenn die ___ älter wird, steigen die Kosten für Gesundheit.",
-        "Auch die Finanzierung der ___ wird schwieriger.",
-        "Immer mehr Menschen brauchen ___ im Alter.",
-        "Viele Branchen leiden unter ___.",
-        "___ kann helfen, den Arbeitsmarkt zu stabilisieren.",
-        "Die steigende ___ ist einerseits positiv, andererseits teuer."
+        "Eine niedrige ___ verändert langfristig die Altersstruktur eines Landes.",
+        "Die ___ der Gesellschaft stellt Politik und Wirtschaft vor neue Aufgaben.",
+        "Die ___ wächst in manchen Regionen, während sie in anderen schrumpft.",
+        "Eine sichere ___ ist für ältere Menschen besonders wichtig.",
+        "Gute ___ wird wichtiger, wenn immer mehr Menschen sehr alt werden.",
+        "Durch ___ fehlen in vielen Branchen qualifizierte Mitarbeitende.",
+        "Gezielte ___ kann helfen, den Arbeitsmarkt zu entlasten.",
+        "Eine steigende ___ ist ein Zeichen medizinischen Fortschritts.",
+        "Zwischen den ___ muss es Solidarität geben.",
+        "Der ___ verändert sich durch Digitalisierung und demografischen Wandel."
       ],
       "items": [
         [
@@ -3469,6 +3641,14 @@ window.THEMES = [
         [
           "Lebenserwartung",
           "esperanza de vida"
+        ],
+        [
+          "Generation",
+          "generación"
+        ],
+        [
+          "Arbeitsmarkt",
+          "mercado laboral"
         ]
       ]
     }
@@ -3621,14 +3801,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "In einer ___ können Bürgerinnen und Bürger mitentscheiden.",
-        "Eine ___ gibt den Menschen die Möglichkeit, politische Vertreter zu wählen.",
-        "Die ___ muss Entscheidungen erklären und begründen.",
-        "Ein ___ regelt das Zusammenleben in der Gesellschaft.",
-        "___ ist besonders für junge Menschen wichtig.",
-        "Eine ___ vertritt bestimmte politische Positionen.",
-        "Politische ___ stärkt die Demokratie.",
-        "Der Schutz der ___ ist eine zentrale Aufgabe des Staates."
+        "In einer ___ entscheiden Bürgerinnen und Bürger durch Wahlen mit.",
+        "Eine freie ___ ist ein Grundelement demokratischer Beteiligung.",
+        "Die ___ muss politische Entscheidungen begründen und erklären.",
+        "Ein ___ regelt das Zusammenleben in einer Gesellschaft.",
+        "___ bedeutet, dass Menschen aktiv an Entscheidungen beteiligt werden.",
+        "Eine politische ___ vertritt bestimmte Ziele und Interessen.",
+        "Demokratische ___ endet nicht am Wahltag.",
+        "___ schützen die Würde und Freiheit jedes Menschen.",
+        "___ ist ein wichtiges Ziel moderner Demokratien.",
+        "Politische ___ betrifft nicht nur Politikerinnen und Politiker."
       ],
       "items": [
         [
@@ -3662,6 +3844,14 @@ window.THEMES = [
         [
           "Menschenrechte",
           "derechos humanos"
+        ],
+        [
+          "Gleichberechtigung",
+          "igualdad de derechos"
+        ],
+        [
+          "Verantwortung",
+          "responsabilidad"
         ]
       ]
     }
@@ -3814,14 +4004,16 @@ window.THEMES = [
     ],
     "luecken": {
       "sentences": [
-        "Die ___ verbindet viele Länder Europas politisch und wirtschaftlich.",
-        "Internationale ___ ist wichtig, um gemeinsame Probleme zu lösen.",
-        "Der ___ erleichtert Handel zwischen den Mitgliedstaaten.",
-        "Reisen und Studieren in Europa zeigen den Wert von ___.",
-        "Viele ___ sind heute innerhalb Europas leichter zu überwinden.",
-        "Jeder ___ bringt eigene Interessen ein.",
-        "Schüleraustausch fördert den ___.",
-        "Europa lebt von kultureller ___."
+        "Die ___ verbindet viele Länder politisch und wirtschaftlich.",
+        "Internationale ___ ist bei Klima, Sicherheit und Handel besonders wichtig.",
+        "Der ___ erleichtert den Handel zwischen den Mitgliedstaaten.",
+        "In Europa bedeutet ___ auch reisen, lernen und arbeiten zu können.",
+        "Offene ___ erleichtern Begegnungen, werfen aber auch Fragen auf.",
+        "Jeder ___ bringt eigene Interessen in die europäische Politik ein.",
+        "Ein schulischer ___ kann Vorurteile abbauen und neue Perspektiven eröffnen.",
+        "Europäische ___ zeigt sich in Sprachen, Traditionen und Lebensweisen.",
+        "___ innerhalb Europas eröffnet jungen Menschen viele Chancen.",
+        "Gelungene ___ braucht gemeinsame Regeln und gegenseitigen Respekt."
       ],
       "items": [
         [
@@ -3855,6 +4047,14 @@ window.THEMES = [
         [
           "Vielfalt",
           "diversidad"
+        ],
+        [
+          "Mobilität",
+          "movilidad"
+        ],
+        [
+          "Integration",
+          "integración"
         ]
       ]
     }
