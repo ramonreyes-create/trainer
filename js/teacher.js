@@ -7,7 +7,7 @@ function initialConfig(){
 }
 function readForm(){
   return {
-    appVersion: "6.3",
+    appVersion: "8.6-final-functional",
     schoolName: document.getElementById("schoolName").value.trim() || "DeutschQuest DSD II",
     sheetUrl: document.getElementById("sheetUrl").value.trim(),
     courses: document.getElementById("courses").value.split(",").map(x=>x.trim()).filter(Boolean),
@@ -16,7 +16,7 @@ function readForm(){
 }
 function buildConfig(showStatus=true){
   const c = readForm();
-  const code = `// DeutschQuest DSD II 6.3 – GitHub Ready
+  const code = `// DeutschQuest DSD II 8.6 Final Funcional – GitHub Ready
 window.DQ_CONFIG = ${JSON.stringify(c,null,2)};
 `;
   document.getElementById("configCode").value = code;
@@ -48,7 +48,7 @@ async function testConnection(){
     st.className="small saveBad";return;
   }
   try{
-    await fetch(c.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({timestamp:new Date().toISOString(),name:"TEST",course:"TEST",theme:"TEST",mode:"Verbindungstest 6.3",correct:1,total:1,percent:100,timeSeconds:0,errors:"",userAgent:navigator.userAgent})});
+    await fetch(c.sheetUrl,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({timestamp:new Date().toISOString(),name:"TEST",course:"TEST",theme:"TEST",mode:"Verbindungstest 8.6",correct:1,total:1,percent:100,timeSeconds:0,errors:"",userAgent:navigator.userAgent})});
     st.textContent="Test gesendet. Prüfe im Google Sheet, ob eine TEST-Zeile angekommen ist.";
     st.className="small saveOk";
   }catch(e){

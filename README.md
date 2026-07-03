@@ -1,4 +1,4 @@
-# DeutschQuest DSD II 6.3 – GitHub Ready
+# DeutschQuest DSD II 8.6 Final Funcional – GitHub Ready
 
 Esta versión está preparada para GitHub Pages y mejora la versión 6.2.
 
@@ -47,22 +47,3 @@ sheetUrl: "https://script.google.com/macros/s/TU_URL/exec",
 - Generador de `config.js`.
 - Advertencia clara de que el Lehrer-Modus no modifica GitHub automáticamente.
 - Versión coherente 6.3 en HTML y JS.
-
-
-## Version 8.3 Original + Registro Total
-Esta versión conserva el diseño y la estructura funcional de la 6.3. La única mejora central es el registro completo de la sesión: temas, cambios de actividad, respuestas, intentos, puntajes, tiempos, cambios de pestaña y salida/entrada de pantalla completa.
-
-
-## Änderung 8.3
-
-- Das Aktivitätsprotokoll wird im Schüler-Modus nicht sichtbar angezeigt.
-- Das vollständige Protokoll wird weiterhin intern gesammelt und an Google Sheets gesendet.
-- Beim Senden erscheint für die Schülerin nur der Status „Wird gesendet …“ und danach „Gesendet“.
-
-
-## Version 8.6
-
-- Basada en el diseño estable 6.3 / 8.3.
-- Registro total oculto en modo estudiante.
-- Lückentext revisado pedagógicamente: frases naturales por tema DSD II, sin oraciones automáticas sin sentido.
-- Mantiene todas las Übungsformen existentes.

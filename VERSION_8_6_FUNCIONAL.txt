@@ -1,0 +1,25 @@
+DeutschQuest DSD II 8.6 Funcional
+
+Base: versión 6.3 original.
+
+Qué se mantuvo:
+- Diseño original 6.3.
+- data/themes.js con vocabulario y temas originales.
+- Übungsformen originales.
+
+Qué se mejoró:
+- Botón del alumno: "Gesamtes Protokoll senden".
+- El registro interno NO se muestra a la alumna.
+- Al enviar aparece "Wird gesendet …" y luego "Gesendet ✓".
+- Registro total de sesión: tema, actividad, respuestas verificadas, puntaje, tiempo, cambio de pestaña, pérdida de foco y salida/entrada de fullscreen si ocurre.
+- Nuevo Google Apps Script con dos hojas:
+  1. Ergebnisse: resumen.
+  2. Aktivitaetsprotokoll: historial completo de eventos.
+- Corrección puntual del Lückentext de Klimawandel para que "Anpassung" corresponda a la oración correcta.
+
+IMPORTANTE:
+1. Copiar el contenido de google/google_apps_script.gs en Apps Script.
+2. Publicar como Web App.
+3. Copiar la URL que termina en /exec.
+4. Pegar esa URL en js/config.js o usar teacher.html para generar el config.
+5. Subir TODO el contenido de esta carpeta a GitHub Pages.
